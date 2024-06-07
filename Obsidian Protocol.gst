@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2137-ec53-3f2e-4674" name="Obsidian Protocol" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2137-ec53-3f2e-4674" name="Obsidian Protocol" revision="2" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="8e0a-942d-4e72-f585" name="Points" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
