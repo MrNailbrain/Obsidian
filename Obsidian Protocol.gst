@@ -18,14 +18,15 @@
     <profileType id="b440-ec09-28e2-93c2" name="Drone">
       <characteristicTypes>
         <characteristicType id="6677-10b7-244f-e804" name="E"/>
-        <characteristicType id="2ba8-3e4f-87b0-fc08" name="HP"/>
-        <characteristicType id="d70d-165c-bfc8-cff2" name="ARM"/>
-        <characteristicType id="0d3f-6af8-5fec-bd37" name="FW"/>
-        <characteristicType id="6dc0-aa77-f700-e825" name="MOV"/>
-        <characteristicType id="cdcf-88d9-7773-fa01" name="AGL"/>
-        <characteristicType id="d270-a719-79bd-7778" name="INT"/>
-        <characteristicType id="5964-46c9-d476-5f2c" name="BAL"/>
-        <characteristicType id="d8de-7831-920e-7579" name="CC"/>
+        <characteristicType id="2ba8-3e4f-87b0-fc08" name="H"/>
+        <characteristicType id="d70d-165c-bfc8-cff2" name="HP"/>
+        <characteristicType id="0d3f-6af8-5fec-bd37" name="ARM"/>
+        <characteristicType id="6dc0-aa77-f700-e825" name="FW"/>
+        <characteristicType id="cdcf-88d9-7773-fa01" name="MOV"/>
+        <characteristicType id="d270-a719-79bd-7778" name="AGL"/>
+        <characteristicType id="5964-46c9-d476-5f2c" name="INT"/>
+        <characteristicType id="d8de-7831-920e-7579" name="BAL"/>
+        <characteristicType id="15f2-4378-0983-53d4" name="CC"/>
       </characteristicTypes>
     </profileType>
     <profileType id="16f3-1fba-9887-f57c" name="Chassis">
@@ -46,11 +47,12 @@
     <profileType id="e33b-e647-da7c-84ac" name="Weapon">
       <characteristicTypes>
         <characteristicType id="4987-4e4d-7d46-b8be" name="Action Cost"/>
-        <characteristicType id="45a1-37ed-9b73-ef71" name="Attacks"/>
-        <characteristicType id="e930-1438-9e48-ee3d" name="Accuracy"/>
-        <characteristicType id="e892-ae9d-6cfd-a4b4" name="Damage"/>
-        <characteristicType id="be45-c5a9-d0bb-f5cb" name="AP"/>
-        <characteristicType id="6761-dd5f-8ae9-bde4" name="Special"/>
+        <characteristicType id="45a1-37ed-9b73-ef71" name="Range"/>
+        <characteristicType id="e930-1438-9e48-ee3d" name="Attacks"/>
+        <characteristicType id="e892-ae9d-6cfd-a4b4" name="Accuracy"/>
+        <characteristicType id="be45-c5a9-d0bb-f5cb" name="Damage"/>
+        <characteristicType id="6761-dd5f-8ae9-bde4" name="AP"/>
+        <characteristicType id="7150-9125-f07c-d927" name="Special"/>
       </characteristicTypes>
     </profileType>
     <profileType id="bd82-be4a-dc12-7a5b" name="Equipment">
@@ -67,6 +69,7 @@
         <characteristicType id="ffea-1393-8d8f-62f3" name="FW"/>
         <characteristicType id="bbeb-6f06-4059-5e45" name="Damage"/>
         <characteristicType id="cefe-f546-d4e9-7e74" name="AP"/>
+        <characteristicType id="1078-7900-747a-5c6d" name="Behavior"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>

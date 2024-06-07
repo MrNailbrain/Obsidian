@@ -856,7 +856,92 @@
         <cost name="Points" typeId="8e0a-942d-4e72-f585" value="23.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7bf2-5839-c648-084b" name="Hyena Drone" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="6ec5-d852-b478-1506" name="Hyena Drone" hidden="false" typeId="b440-ec09-28e2-93c2" typeName="Drone">
+          <characteristics>
+            <characteristic name="E" typeId="6677-10b7-244f-e804">5</characteristic>
+            <characteristic name="H" typeId="2ba8-3e4f-87b0-fc08">2/4/6</characteristic>
+            <characteristic name="HP" typeId="d70d-165c-bfc8-cff2">18</characteristic>
+            <characteristic name="ARM" typeId="0d3f-6af8-5fec-bd37">1</characteristic>
+            <characteristic name="FW" typeId="6dc0-aa77-f700-e825">1</characteristic>
+            <characteristic name="MOV" typeId="cdcf-88d9-7773-fa01">10</characteristic>
+            <characteristic name="AGL" typeId="d270-a719-79bd-7778">16</characteristic>
+            <characteristic name="INT" typeId="5964-46c9-d476-5f2c">1</characteristic>
+            <characteristic name="BAL" typeId="d8de-7831-920e-7579">1</characteristic>
+            <characteristic name="CC" typeId="15f2-4378-0983-53d4">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0792-d388-8ed4-e767" name="Drone Hardpoint" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6379-d89e-97b3-7508" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e5a-249d-b156-0f4f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5dd0-ed70-0706-9461" name="Machinegun" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="ef6c-5147-2ece-8814" name="Machinegun" hidden="false" targetId="f9c9-3242-d4ac-cd0f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="eaa0-2ffb-57c9-42d6" name="Quad Missile Rack" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="57cf-aa12-ff32-a29d" name="Quad Missile Launcher" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Launch Missile (1E2H) Spend one ammunition to launch one Razor Missile.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="f99f-8af1-1747-5c69" name="Razor Missile" hidden="false" targetId="a5a4-100e-d131-8559" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="039a-2e6f-bcbf-0c9a" name="Drone Radar" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="e467-7ef4-1541-6863" name="Reaction: Launch Chaff" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">(1E2H) When an enemy Deployable ends its movement within 6” of this Mech, this Reaction may be used.  Make 2 Ballistics attack rolls (2d12) against the Deployable using the Ballistics stat of this Mech.  For each successful hit, deal 1d12 AP0 damage to the Deployable.  If this attack destroys the Deployable, it causes no damage.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="09ff-41bd-37b3-1e54" name="Reaction: Radar Jam" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">(1E1H) When an enemy Smart Munition ends its movement within 16” of this Mech, this Reaction may be used.  Make 2 E-War attack rolls (2d12) and for each roll of a 12+, assign 1 Jam E-War token to the Smart Munition.  </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="2d84-c099-755d-0269" name="E-War: Jam" hidden="false">
+                  <description>E-War effect: This Smart Munition may not pivot during its activation.  Crippling E-War effect: Ownership of this Smart Munition changes to the player that triggered this E-War effect.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="1.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="2.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
+  <rules>
+    <rule id="2992-fa9d-7864-f32a" name="RDL Faction Reaction: Retribution" hidden="false">
+      <description>(2E2H) After a Mech is damaged by an enemy attack, it may declare the use of this reaction.  After the attack is fully resolved, the Mech may make a Move action directly toward the model that damaged it.  If the Mech finishes this move in B2B with the opposing model, it may make 1 close combat attack targeting the opposing model, paying the Energy and Heat cost of the attack as normal.
+</description>
+    </rule>
+    <rule id="254a-363a-2c56-3a94" name="RDL Faction Reaction: Unbreakable" hidden="false">
+      <description>(1E3H) When an enemy model finishes a movement of any kind within LOS of this Mech, this Mech may declare the use of this reaction.  For the rest of this Activation, this Mech counts as being in Light Cover even if it is not touching terrain. </description>
+    </rule>
+  </rules>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="b4dc-b659-7949-cddf" name="Chassis" hidden="false" collective="false" import="true">
       <selectionEntries>
@@ -911,11 +996,12 @@
             <profile id="d44b-cf9a-29b5-2265" name="Cleaver" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E2H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">1</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">2d12+6</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">2</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Critical (24+) Amputate: Remove an arm of defending player’s choice on target mech.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+6</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">2</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Critical (24+) Amputate: Remove an arm of defending player’s choice on target mech.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -931,11 +1017,12 @@
             <profile id="cfa4-a09a-31c8-4b21" name="Dagger" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">1E2H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">1</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">1d12+2</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">3</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Critical (22+) Heartseeker: This attack is resolved at AP11 and doubles damage after rolling.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+2</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">3</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Critical (22+) Heartseeker: This attack is resolved at AP11 and doubles damage after rolling.</characteristic>
               </characteristics>
             </profile>
             <profile id="00f0-a8b6-5558-3f84" name="Dual Missile Launcher" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
@@ -956,11 +1043,12 @@
             <profile id="e4aa-a647-4c23-2045" name="Shoulder Railgun" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E2H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">1</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">2d12+5</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">4</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Paired Systems: If this Mech is armed with a Shoulder Railgun on both arms, the attack is resolved with 2 shots instead of 1, and costs 5E5H.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">16-36&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+5</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">4</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Paired Systems: If this Mech is armed with a Shoulder Railgun on both arms, the attack is resolved with 2 shots instead of 1, and costs 5E5H.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -990,11 +1078,12 @@
             <profile id="6343-5564-281b-266c" name="Heavy Shotgun" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E2H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">1</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">3d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">2d12+5</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">1</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Knockdown: Models hit by an attack from this weapon are Knocked Down.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">0-6&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">3d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2s12+5</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">1</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Knockdown: Models hit by an attack from this weapon are Knocked Down.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1015,11 +1104,12 @@
             <profile id="43d0-2ecc-ed51-d084" name="Power Fist" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E2H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">1</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">2d12+4</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">3</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Critical (22+) Pin: Models hit by this weapon are Pinned until the start of this mech’s next activation. Pinned models cannot voluntarily move out of B2B with this mech unless this Mech moves out of B2B first.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+4</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">3</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Critical (22+) Pin: Models hit by this weapon are Pinned until the start of this mech’s next activation. Pinned models cannot voluntarily move out of B2B with this mech unless this Mech moves out of B2B first.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1032,11 +1122,12 @@
             <profile id="0f39-6a03-3bf6-b4d0" name="Rocket Launcher" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E1H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">1</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">2d12+2</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">1</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Explosive Ordnance: On a successful attack roll, all models within 2” of the target model are also hit by this weapon and suffer damage.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">12-24&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+2</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">1</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Explosive Ordnance: On a successful attack roll, all models within 2” of the target model are also hit by this weapon and suffer damage.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1069,12 +1160,13 @@
                 <characteristic name="FW" typeId="ffea-1393-8d8f-62f3">2</characteristic>
                 <characteristic name="Damage" typeId="bbeb-6f06-4059-5e45">When a Smart Munition enters or starts its activation within 12” of an MES Decoy, the MES Decoy immediately makes an E-War attack against the Smart Munition.  2 rolls @2d12, for each roll of 15+ place one Decoy E-War token on the Smart Munition.  </characteristic>
                 <characteristic name="AP" typeId="cefe-f546-d4e9-7e74"/>
+                <characteristic name="Behavior" typeId="1078-7900-747a-5c6d"/>
               </characteristics>
             </profile>
           </profiles>
           <rules>
             <rule id="37ae-b9ff-a3ee-e159" name="E-War: Decoy" hidden="false">
-              <description>E-War effect: Guided or Targeted Smart Munitions must immediately charge their target to the MES Decoy.  Crippling E-War effect: Autonomous Smart Munitions change ownership to the MES Decoy’s controlling player.</description>
+              <description>E-War effect: Smart Munitions must immediately charge their target to the MES Decoy.  Crippling E-War effect: Smart Munitions change ownership to the MES Decoy’s controlling player.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -1093,11 +1185,12 @@
             <profile id="a368-557b-454f-0da4" name="Auto Rifle" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">1E2H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">4</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">1d12</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">1</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Sustained Fire: During a mech’s activation, each subsequent Auto Rifle attack after the first applies a stacking modifier of +1 BAL and +1 AP. Stacks are lost at the end of a mech’s activation.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">8-24&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">4</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">1</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Sustained Fire: During a mech’s activation, each subsequent Auto Rifle attack after the first applies a stacking modifier of +1 BAL and +1 AP. Stacks are lost at the end of a mech’s activation.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1110,11 +1203,12 @@
             <profile id="7c6d-7808-27cd-9b45" name="Chaingun" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">4E3H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">6</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">1d12+4</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">2</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Spin Up: If this Mech is Aiming, this attack is resolved with 10 shots instead of 6.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">8-24&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">6</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+4</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">2</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Spin Up: If this Mech is Aiming, this attack is resolved with 10 shots instead of 6.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1127,11 +1221,12 @@
             <profile id="218c-6634-57bf-2590" name="Heavy Machinegun" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E2H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">5</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">1d12+6</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">1</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Critical (20+) Hail of Lead: Resolve an additional shot with this weapon.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">16-30&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">5</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+6</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">1</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Critical (20+) Hail of Lead: Resolve an additional shot with this weapon.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1141,14 +1236,15 @@
         </selectionEntry>
         <selectionEntry id="d982-6dc7-15d8-2876" name="Shoulder Railgun" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="632a-8621-cf2c-cb58" name="Shoulder Railgun" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+            <profile id="5395-bce4-45de-e99f" name="Shoulder Railgun" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E2H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">1</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">2d12+5</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">4</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Paired Systems: If this Mech is armed with a Shoulder Railgun on both arms, the attack is resolved with 2 shots instead of 1, and costs 5E5H.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">16-36&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+5</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">4</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Paired Systems: If this Mech is armed with a Shoulder Railgun on both arms, the attack is resolved with 2 shots instead of 1, and costs 5E5H.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1158,14 +1254,15 @@
         </selectionEntry>
         <selectionEntry id="c5bb-6ffe-bf37-d417" name="Cleaver" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="9e97-dc53-3cb3-bf18" name="Cleaver" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+            <profile id="8b5a-d155-f349-4576" name="Cleaver" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E2H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">1</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">2d12+6</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">2</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Critical (24+) Amputate: Remove an arm of defending player’s choice on target mech.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+6</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">2</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Critical (24+) Amputate: Remove an arm of defending player’s choice on target mech.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1178,11 +1275,12 @@
             <profile id="04e6-46d9-8e4a-d5dc" name="Heavy Railgun" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">4E5H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">1</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">3d12+3</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">4</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Momentum: This weapon can only be fired while Aiming.  Models that suffer damage from this weapon are Pushed 1&quot; directly away from this model.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">16-48&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">43d12+3</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">5</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Momentum: This weapon can only be fired while Aiming.  Models that suffer damage from this weapon are Pushed 1&quot; directly away from this model.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1192,14 +1290,15 @@
         </selectionEntry>
         <selectionEntry id="2bc0-0257-332c-6398" name="Heavy Shotgun + Shield" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="1618-e9c8-8fab-89f7" name="Heavy Shotgun" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+            <profile id="173e-d2a2-f56c-fd7b" name="Heavy Shotgun" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E2H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">1</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">3d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">2d12+5</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">1</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Knockdown: Models hit by an attack from this weapon are Knocked Down.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">0-6&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">3d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2s12+5</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">1</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Knockdown: Models hit by an attack from this weapon are Knocked Down.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1220,11 +1319,12 @@
             <profile id="c75e-2251-88ea-7ae8" name="Glaive" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E3H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">1</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">3d12+4</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">5</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Reach: This weapon has a 2&quot; melee range.  This Mech may make attacks with this weapon while within melee range, instead of B2B.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">3d12+4</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">5</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Reach: This weapon has a 2&quot; melee range.  This Mech may make attacks with this weapon while within melee range, instead of B2B.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1240,11 +1340,12 @@
             <profile id="265e-f382-32b7-345a" name="Meteor Hammer" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E2H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">1</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">2d12+10</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">0</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Knockdown: Models hit by an attack from this weapon are Knocked Down.  Concussive: After resolving damage from this attack, reduce the target model&apos;s BAL and INT by 1 until the end of its next activation.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+10</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">0</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Knockdown: Models hit by an attack from this weapon are Knocked Down.  Concussive: After resolving damage from this attack, reduce the target model&apos;s BAL and INT by 1 until the end of its next activation.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1259,14 +1360,15 @@
         </selectionEntry>
         <selectionEntry id="dadd-3ce5-a3bd-c650" name="Cleaver + Machinegun + Shield" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="c60b-9e98-c3ee-5af2" name="Cleaver" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+            <profile id="54ee-0adf-4081-80d6" name="Cleaver" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E2H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">1</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">2d12+6</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">2</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Critical (24+) Amputate: Remove an arm of defending player’s choice on target mech.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+6</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">2</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Critical (24+) Amputate: Remove an arm of defending player’s choice on target mech.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1283,11 +1385,12 @@
             <profile id="aa77-2f10-b61a-8724" name="Submachine Gun" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">1E2H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">6</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">1d12</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">1</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Critical (20+) Armor-Piercing: This shot is resolved at AP4.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">0-12&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">6</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">1</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Critical (20+) Armor-Piercing: This shot is resolved at AP4.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1300,11 +1403,12 @@
             <profile id="f501-e472-dc0c-93d1" name="Tactical Rifle" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E1H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">3</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">1d12+4</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">3</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Precise: When resolving an attack with this weapon while this Mech is Aiming, enemy models reduce their Cover AGL bonus by 2 to a minimum of 0.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">6-24&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">3</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+4</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">3</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Precise: When resolving an attack with this weapon while this Mech is Aiming, enemy models reduce their Cover AGL bonus by 2 to a minimum of 0.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1317,11 +1421,12 @@
             <profile id="4a10-c7c2-006e-9ff2" name="Wrist Rotary Cannon" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E2H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">4</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">1d12+4</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">2</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Point-Blank: This ranged attack can target models in B2B with this mech.  If this attack targets an enemy model in B2B with this mech, and if this mech has damaged that enemy model during this activation with a melee attack, this attack automatically hits with no need to roll dice.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">0-16&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">4</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+4</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">2</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Point-Blank: This ranged attack can target models in B2B with this mech.  If this attack targets an enemy model in B2B with this mech, and if this mech has damaged that enemy model during this activation with a melee attack, this attack automatically hits with no need to roll dice.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1352,7 +1457,7 @@
           <profiles>
             <profile id="0f93-62c5-97c0-ceae" name="Reaction: Radar Jam" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
               <characteristics>
-                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">(1E1H) When an enemy Deployable ends its movement within 16” of this Mech, this Reaction may be used.  Make 2 E-War attack rolls (2d12) and for each roll of a 12+, assign 1 E-War token to an enemy Deployable within 16” of this Mech.  When a Guided Deployable has 2 or more E-War tokens, it may not pivot during its next activation.  When an Intelligent Deployable has 2 or more E-War tokens, ownership of the Intelligent Deployable switches to the player who has the most E-War tokens on that Deployable. </characteristic>
+                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">(1E1H) When an enemy Smart Munition ends its movement within 16” of this Mech, this Reaction may be used.  Make 2 E-War attack rolls (2d12) and for each roll of a 12+, assign 1 Jam E-War token to the Smart Munition.  </characteristic>
               </characteristics>
             </profile>
             <profile id="66a4-16d3-8e71-61ec" name="Reaction: Launch Chaff" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
@@ -1361,6 +1466,11 @@
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="88da-b9eb-807e-2ead" name="E-War: Jam" hidden="false">
+              <description>E-War effect: This Smart Munition may not pivot during its activation.  Crippling E-War effect: Ownership of this Smart Munition changes to the player that triggered this E-War effect.</description>
+            </rule>
+          </rules>
           <costs>
             <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
           </costs>
@@ -1381,7 +1491,7 @@
           <profiles>
             <profile id="89d1-1123-0361-f75f" name="Quad Missile Launcher" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
               <characteristics>
-                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Launch Missile (1E2H) Spend one ammunition to launch one Razor Missile, which Locks the closest enemy target.</characteristic>
+                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Launch Missile (1E2H) Spend one ammunition to launch one Razor Missile.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1397,19 +1507,20 @@
             <profile id="d5e8-ab95-b6c7-1500" name="Artillery Cannon" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
                 <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">5E5H</characteristic>
-                <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">1</characteristic>
-                <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-                <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">4d12+8</characteristic>
-                <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">3</characteristic>
-                <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4">Direct Fire: This weapon may not be used to perform attacks unless this Mech is Aiming.  This attack may be performed only once per activation.</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">24-60&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">4d12+8</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">3</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Direct Fire: This weapon may not be used to perform attacks unless this Mech is Aiming.  Autoloader: This attack may be performed only once per activation.</characteristic>
               </characteristics>
             </profile>
             <profile id="03cc-e4f8-68b3-1afe" name="Barrage" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
               <characteristics>
-                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Action (5E5H): Launch 1 Guided Artillery Shell.</characteristic>
+                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Action (5E5H): Launch 1 Ramjet Artillery Shell.  Place 1 Ramjet Artillery Shell anywhere within 20&quot; of this model.  Autoloader: This action may only be performed once per activation.</characteristic>
               </characteristics>
             </profile>
-            <profile id="beb4-26cc-9f70-201d" name="Guided Artillery Shell" hidden="false" typeId="7b43-5b30-10ac-5318" typeName="Smart Munition">
+            <profile id="beb4-26cc-9f70-201d" name="Ramjet Artillery Shell" hidden="false" typeId="7b43-5b30-10ac-5318" typeName="Smart Munition">
               <characteristics>
                 <characteristic name="MOV" typeId="2395-cc5b-d0e8-beab">20</characteristic>
                 <characteristic name="AGL" typeId="5997-853e-2001-7dc1">24</characteristic>
@@ -1418,6 +1529,7 @@
                 <characteristic name="FW" typeId="ffea-1393-8d8f-62f3">1</characteristic>
                 <characteristic name="Damage" typeId="bbeb-6f06-4059-5e45">4d12+3</characteristic>
                 <characteristic name="AP" typeId="cefe-f546-d4e9-7e74">3</characteristic>
+                <characteristic name="Behavior" typeId="1078-7900-747a-5c6d">When a Ramjet Artillery Shell activates, it may turn up to 45 degrees in either direction from its current facing, then moves its maximum move distance directly forwards.  If the Ramjet Artillery Shell enters base-to-base contact with an enemy model, it immediately explodes without an attack roll, dealing its Damage to all models within 2&quot; of itself.  Then, it is removed from the table.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1490,12 +1602,12 @@
           <profiles>
             <profile id="bb6f-2cf8-b0bc-4bb1" name="Dual Falcon Missile Rack" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
               <characteristics>
-                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Launch Missile (1E2H) Spend one ammunition to launch one Falcon Missile, which Locks the closest enemy target.</characteristic>
+                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Launch Missile (1E2H) Spend one ammunition to launch one Falcon Missile,.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="455f-12b6-0e74-6acc" name="Razor Missile" hidden="false" targetId="a5a4-100e-d131-8559" type="profile"/>
+            <infoLink id="455f-12b6-0e74-6acc" name="Falcon Missile" hidden="false" targetId="8bdf-dc20-8a2d-83cb" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
@@ -1505,7 +1617,7 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="086f-e0bb-bba5-d7d1" name="Painted" hidden="false">
+    <rule id="086f-e0bb-bba5-d7d1" name="E-War: Painted" hidden="false">
       <description>E-War Effect: Painted models may be selected as a Locked Target by any Smart Munition upon launch.</description>
     </rule>
   </sharedRules>
@@ -1519,6 +1631,7 @@
         <characteristic name="FW" typeId="ffea-1393-8d8f-62f3">1</characteristic>
         <characteristic name="Damage" typeId="bbeb-6f06-4059-5e45">2d12+2</characteristic>
         <characteristic name="AP" typeId="cefe-f546-d4e9-7e74">2</characteristic>
+        <characteristic name="Behavior" typeId="1078-7900-747a-5c6d">When Launched, Lock the closest enemy model.  When a Razor Missile activates, it may turn up to 45 degrees in either direction from its current facing, then moves its maximum move distance directly forwards, towards the Locked model.  If the Razor Missile enters base-to-base contact with an enemy model, it immediately explodes without an attack roll, dealing its Damage to all models within 2&quot; of itself.  Then, it is removed from the table.</characteristic>
       </characteristics>
     </profile>
     <profile id="c039-c14d-f701-0a41" name="Shield" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
@@ -1529,26 +1642,40 @@
     <profile id="f9c9-3242-d4ac-cd0f" name="Machinegun" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
       <characteristics>
         <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E2H</characteristic>
-        <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">4</characteristic>
-        <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-        <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">1d12+4</characteristic>
-        <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">1</characteristic>
-        <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4"/>
+        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">12-24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">4</characteristic>
+        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+4</characteristic>
+        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">1</characteristic>
+        <characteristic name="Special" typeId="7150-9125-f07c-d927">12-24&quot;</characteristic>
       </characteristics>
     </profile>
     <profile id="bb70-2afc-f49a-2b19" name="Sabre" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
       <characteristics>
         <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E2H</characteristic>
-        <characteristic name="Attacks" typeId="45a1-37ed-9b73-ef71">2</characteristic>
-        <characteristic name="Accuracy" typeId="e930-1438-9e48-ee3d">2d12</characteristic>
-        <characteristic name="Damage" typeId="e892-ae9d-6cfd-a4b4">2d12+6</characteristic>
-        <characteristic name="AP" typeId="be45-c5a9-d0bb-f5cb">2</characteristic>
-        <characteristic name="Special" typeId="6761-dd5f-8ae9-bde4"/>
+        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
+        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">2</characteristic>
+        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+6</characteristic>
+        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">2</characteristic>
+        <characteristic name="Special" typeId="7150-9125-f07c-d927"></characteristic>
       </characteristics>
     </profile>
     <profile id="6146-63a7-ec7c-d56d" name="Buckler" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
       <characteristics>
-        <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Reaction: Deflect (1E21) When targeted by an attack, this Mech may perform this reaction.  Gain +1ARM during this attack.</characteristic>
+        <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Reaction: Deflect (1E2H) When targeted by an attack, this Mech may perform this reaction.  Gain +1ARM during this attack.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8bdf-dc20-8a2d-83cb" name="Falcon Missile" hidden="false" typeId="7b43-5b30-10ac-5318" typeName="Smart Munition">
+      <characteristics>
+        <characteristic name="MOV" typeId="2395-cc5b-d0e8-beab">12</characteristic>
+        <characteristic name="AGL" typeId="5997-853e-2001-7dc1">18</characteristic>
+        <characteristic name="HP" typeId="b1fe-d130-ea89-69a7">5</characteristic>
+        <characteristic name="ARM" typeId="39ac-47b6-9832-a80e">2</characteristic>
+        <characteristic name="FW" typeId="ffea-1393-8d8f-62f3">1</characteristic>
+        <characteristic name="Damage" typeId="bbeb-6f06-4059-5e45">2d12+6</characteristic>
+        <characteristic name="AP" typeId="cefe-f546-d4e9-7e74">4</characteristic>
+        <characteristic name="Behavior" typeId="1078-7900-747a-5c6d">When Launched, Lock the closest enemy model, or any Painted model.  When a Falcon Missile activates, it may turn up to 90 degrees in either direction from its current facing, then moves its maximum move distance directly forwards, towards the Locked model.  If the Falcon Missile enters base-to-base contact with an enemy model, it immediately explodes without an attack roll, dealing its Damage to all models in B2B.  Then, it is removed from the table.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
