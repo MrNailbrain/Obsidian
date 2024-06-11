@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a121-69b5-de2c-f2db" name="RDL" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="2137-ec53-3f2e-4674" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a121-69b5-de2c-f2db" name="RDL" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="2137-ec53-3f2e-4674" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="da46-9acf-9a49-7df6" name="Battle Core" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1001,7 +1001,7 @@
                 <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
                 <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+6</characteristic>
                 <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">2</characteristic>
-                <characteristic name="Special" typeId="7150-9125-f07c-d927">Critical (24+) Amputate: Remove an arm of defending player’s choice on target mech.</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Critical (24+) Amputate: Remove an arm of defending player’s choice on target Mech.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1081,7 +1081,7 @@
                 <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">0-6&quot;</characteristic>
                 <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
                 <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">3d12</characteristic>
-                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2s12+5</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+5</characteristic>
                 <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">1</characteristic>
                 <characteristic name="Special" typeId="7150-9125-f07c-d927">Knockdown: Models hit by an attack from this weapon are Knocked Down.</characteristic>
               </characteristics>
@@ -1096,7 +1096,7 @@
             <infoLink id="6127-fe60-6e09-df3b" name="Shield" hidden="false" targetId="c039-c14d-f701-0a41" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="76bb-9497-d4c7-8a02" name="Power Fist" hidden="false" collective="false" import="true" type="upgrade">
@@ -1132,7 +1132,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="6.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="abd1-7033-59d0-d9b5" name="Sabre + Buckler" hidden="false" collective="false" import="true" type="upgrade">
@@ -1202,7 +1202,7 @@
           <profiles>
             <profile id="7c6d-7808-27cd-9b45" name="Chaingun" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
-                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">4E3H</characteristic>
+                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">4E4H</characteristic>
                 <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">8-24&quot;</characteristic>
                 <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">6</characteristic>
                 <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
@@ -1220,7 +1220,7 @@
           <profiles>
             <profile id="218c-6634-57bf-2590" name="Heavy Machinegun" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
-                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E2H</characteristic>
+                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E3H</characteristic>
                 <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">16-30&quot;</characteristic>
                 <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">5</characteristic>
                 <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
@@ -1231,7 +1231,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="4.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d982-6dc7-15d8-2876" name="Shoulder Railgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1278,14 +1278,14 @@
                 <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">16-48&quot;</characteristic>
                 <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
                 <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
-                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">43d12+3</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">3d12+3</characteristic>
                 <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">5</characteristic>
                 <characteristic name="Special" typeId="7150-9125-f07c-d927">Momentum: This weapon can only be fired while Aiming.  Models that suffer damage from this weapon are Pushed 1&quot; directly away from this model.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="8.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="7.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2bc0-0257-332c-6398" name="Heavy Shotgun + Shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -1296,7 +1296,7 @@
                 <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">0-6&quot;</characteristic>
                 <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
                 <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">3d12</characteristic>
-                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2s12+5</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+5</characteristic>
                 <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">1</characteristic>
                 <characteristic name="Special" typeId="7150-9125-f07c-d927">Knockdown: Models hit by an attack from this weapon are Knocked Down.</characteristic>
               </characteristics>
@@ -1311,14 +1311,14 @@
             <infoLink id="051f-eaf2-8795-daeb" name="Shield" hidden="false" targetId="c039-c14d-f701-0a41" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="aa38-d06b-84a9-dcb6" name="Glaive + Machinegun" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="c75e-2251-88ea-7ae8" name="Glaive" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
-                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E3H</characteristic>
+                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E3H</characteristic>
                 <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
                 <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
                 <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
@@ -1332,14 +1332,14 @@
             <infoLink id="0970-e9a4-58ee-b212" name="Machinegun" hidden="false" targetId="f9c9-3242-d4ac-cd0f" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="6.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="7.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2202-463f-9434-196e" name="Meteor Hammer" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="265e-f382-32b7-345a" name="Meteor Hammer" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
-                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E2H</characteristic>
+                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E3H</characteristic>
                 <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
                 <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
                 <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
@@ -1402,7 +1402,7 @@
           <profiles>
             <profile id="f501-e472-dc0c-93d1" name="Tactical Rifle" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
               <characteristics>
-                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E1H</characteristic>
+                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E1H</characteristic>
                 <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">6-24&quot;</characteristic>
                 <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">3</characteristic>
                 <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
@@ -1413,7 +1413,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="4.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a8d5-9ed0-d428-3b37" name="Sabre + Wrist Rotary Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1647,7 +1647,7 @@
         <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
         <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+4</characteristic>
         <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">1</characteristic>
-        <characteristic name="Special" typeId="7150-9125-f07c-d927">12-24&quot;</characteristic>
+        <characteristic name="Special" typeId="7150-9125-f07c-d927"></characteristic>
       </characteristics>
     </profile>
     <profile id="bb70-2afc-f49a-2b19" name="Sabre" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
