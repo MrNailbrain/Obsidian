@@ -1,0 +1,1194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="a121-69b5-de2c-f2db" name="UN" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="2137-ec53-3f2e-4674" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="3c27-c1e4-297d-fc7f" name="Viper Low Signal Core" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="9ea8-ffec-7b78-909a" name="Viper Low Signal Core" hidden="false" typeId="5441-d3da-946e-879a" typeName="Mech">
+          <characteristics>
+            <characteristic name="E" typeId="5d80-cc77-5c6f-d76b">9</characteristic>
+            <characteristic name="H" typeId="8276-1967-ffec-e447">4/6/8</characteristic>
+            <characteristic name="HP" typeId="6635-e02d-2375-67be">40</characteristic>
+            <characteristic name="ARM" typeId="2c93-ac69-f9fc-0e48">2</characteristic>
+            <characteristic name="FW" typeId="78bc-50ed-1471-ae75">3</characteristic>
+            <characteristic name="L" typeId="7330-ca8b-db32-794a">1</characteristic>
+            <characteristic name="Mech Ability" typeId="7ba0-c2db-4911-97b3">Reaction: Signal Dampen (3E0H): This Reaction can be performed when this Mech is targeted by an enemy attack, or during the activation of an enemy Smart Munition.  This Mech gains +3 AGL for the duration of the attack, and enemy Smart Munitions will ignore this Mech when determining the closest model.  This Reaction has no effect when this Mech is Painted or Sat-Locked.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="78df-71b5-aafd-f6c7" name="Chassis" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="555b-902a-64a7-afcb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7cd-2f28-c7de-d253" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7acd-0cf0-2d31-57b3" name="Chassis" hidden="false" collective="false" import="true" targetId="b4dc-b659-7949-cddf" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26ad-cf1c-1c03-9dba" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="576a-8686-0e57-b1a7" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4013-a1db-9310-519d" name="Pilot" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fad9-fb15-759a-481b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cf8-24b9-4f58-5ff0" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="17c3-493c-9095-b585" name="Designated Marksman" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="1d34-495a-5f9e-a82f" name="Designated Marksman" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
+                  <characteristics>
+                    <characteristic name="INT" typeId="819a-ac56-3e01-da45">4</characteristic>
+                    <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">4</characteristic>
+                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">3</characteristic>
+                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Spotter: Mechs hit by an attack from this model gain 1 Sat-Lock E-War token.  Sat-Lock is an E-War effect, friendly mechs shooting at a Sat-Locked target gain +1 Ballistics.  Sat-Locked models may never benefit from wargear that improves AGL.  Sat-Locked models are also Painted.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5aeb-245e-cfc3-1b63" name="Left Arm" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7cb-31da-d5ca-0f92" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e43-a750-e399-5dbc" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2656-8590-c05d-d870" name="Left Arm" hidden="false" collective="false" import="true" targetId="5e51-59d7-9e48-ec36" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1da-b05f-18ba-d6a3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4ef-e329-2d06-f280" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="30da-f61f-4df3-06b9" name="Right Arm" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b3d-9aca-7a15-f969" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72ac-0c3e-0c8f-ae7f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a289-2d9a-9da6-42a1" name="Right Arm" hidden="false" collective="false" import="true" targetId="a864-4bd5-c93c-6738" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d98b-b01d-d2c3-730b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f481-b2b3-1150-9b48" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b805-de04-9877-bef2" name="Tactical Subsystem" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc1b-eb98-0637-b851" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a99-536f-65b3-6cb6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b07f-32e9-9468-297c" name="Tactical Subsystem" hidden="false" collective="false" import="true" targetId="22b2-dbab-c723-13ad" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a219-713a-a364-604f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7522-6226-3dca-7bc0" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="19.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4a3a-68ca-dd21-0752" name="Lynx Core" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="2d21-7178-3249-2589" name="Lynx Core" hidden="false" typeId="5441-d3da-946e-879a" typeName="Mech">
+          <characteristics>
+            <characteristic name="E" typeId="5d80-cc77-5c6f-d76b">8</characteristic>
+            <characteristic name="H" typeId="8276-1967-ffec-e447">3/6/9</characteristic>
+            <characteristic name="HP" typeId="6635-e02d-2375-67be">38</characteristic>
+            <characteristic name="ARM" typeId="2c93-ac69-f9fc-0e48">2</characteristic>
+            <characteristic name="FW" typeId="78bc-50ed-1471-ae75">2</characteristic>
+            <characteristic name="L" typeId="7330-ca8b-db32-794a">2</characteristic>
+            <characteristic name="Mech Ability" typeId="7ba0-c2db-4911-97b3">Drone Coordination Net: Linked Drones gain +1 Ballistics and may perform Dodge reactions. (Dodge Reaction (2E2H): When this model is targeted by an enemy attack, immediately move 2&quot;.  If after this move, the target is fully out of LOS of the attacker, attacks during this action may only Glance). </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2408-b48e-dc55-4e47" name="Chassis" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3332-39dd-50b5-1bb9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2d9-a9a8-546f-a19c" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="715a-50b7-ce33-20a6" name="Chassis" hidden="false" collective="false" import="true" targetId="b4dc-b659-7949-cddf" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80e2-d3b0-b20c-0f11" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d04b-070b-054d-64f6" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="95f1-150b-8b09-e159" name="Pilot" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b49a-b178-42b6-9202" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62ca-0289-62b8-6e4c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a411-42ee-60fe-40cf" name="Designated Marksman" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="4e5f-094b-5364-7690" name="Designated Marksman" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
+                  <characteristics>
+                    <characteristic name="INT" typeId="819a-ac56-3e01-da45">4</characteristic>
+                    <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">4</characteristic>
+                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">3</characteristic>
+                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Spotter: Mechs hit by an attack from this model gain 1 Sat-Lock E-War token.  Sat-Lock is an E-War effect, friendly mechs shooting at a Sat-Locked target gain +1 Ballistics.  Sat-Locked models may never benefit from wargear that improves AGL.  Sat-Locked models are also Painted.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="3377-e106-0234-11ba" name="Left Arm" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc38-3676-5eeb-e270" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4971-f81c-435b-100a" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="dfd3-1f73-de6e-c0a4" name="Left Arm" hidden="false" collective="false" import="true" targetId="5e51-59d7-9e48-ec36" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="033d-30a2-9fc8-79dc" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4e8-b8df-c75c-6d3b" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9060-aa54-9cd7-da31" name="Right Arm" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0b7-e15a-4255-afe4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a9f-0d2c-c08b-a00d" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="94e6-04ce-5ea8-7251" name="Right Arm" hidden="false" collective="false" import="true" targetId="a864-4bd5-c93c-6738" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7c7-5351-480e-02e4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2896-83fa-8376-686e" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8327-aa55-0d24-11cf" name="Tactical Subsystem" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4098-7b3a-9dad-a5a3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64bb-6d88-0bf4-4046" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2c0d-1af3-f06d-a363" name="Tactical Subsystem" hidden="false" collective="false" import="true" targetId="22b2-dbab-c723-13ad" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c6e-0631-04d3-a052" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2eca-0308-db8b-aeb3" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="19.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="535b-f3c4-8aa9-20ba" name="Octopus Invisible Core" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="26b7-1e3e-4878-0d5f" name="Octopus Invisible Core" hidden="false" typeId="5441-d3da-946e-879a" typeName="Mech">
+          <characteristics>
+            <characteristic name="E" typeId="5d80-cc77-5c6f-d76b">9</characteristic>
+            <characteristic name="H" typeId="8276-1967-ffec-e447">4/6/8</characteristic>
+            <characteristic name="HP" typeId="6635-e02d-2375-67be">36</characteristic>
+            <characteristic name="ARM" typeId="2c93-ac69-f9fc-0e48">2</characteristic>
+            <characteristic name="FW" typeId="78bc-50ed-1471-ae75">2</characteristic>
+            <characteristic name="L" typeId="7330-ca8b-db32-794a">1</characteristic>
+            <characteristic name="Mech Ability" typeId="7ba0-c2db-4911-97b3">Optical Camo: This Mech starts the game in the Optical Camo state.  At the start of its activation, this Mech may spend 3E3H to gain the Optical Camo state.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="3c3d-ddb8-8305-f137" name="Optical Camo" hidden="false">
+          <description>This Mech&apos;s AGL is set to 24, but can gain no bonuses from Cover.  If this Mech attacks or becomes Sat-Locked, this state is canceled.</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e542-d675-aede-9d34" name="Chassis" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01bf-98aa-6391-72f1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1fd-b385-4d78-8c05" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ce92-4a9a-5c3b-597c" name="Chassis" hidden="false" collective="false" import="true" targetId="b4dc-b659-7949-cddf" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51a6-1ac0-7ca7-4ec2" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f15-cb0b-e71d-b414" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="cd24-76f8-4c75-d06a" name="Pilot" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f02-bdca-d5c2-3594" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9fc-6bc8-9eb8-9e9c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c7b9-a35d-d6fb-7556" name="Designated Marksman" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="1b22-d8e6-3ef4-9db9" name="Designated Marksman" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
+                  <characteristics>
+                    <characteristic name="INT" typeId="819a-ac56-3e01-da45">4</characteristic>
+                    <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">4</characteristic>
+                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">3</characteristic>
+                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Spotter: Mechs hit by an attack from this model gain 1 Sat-Lock E-War token.  Sat-Lock is an E-War effect, friendly mechs shooting at a Sat-Locked target gain +1 Ballistics.  Sat-Locked models may never benefit from wargear that improves AGL.  Sat-Locked models are also Painted.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a763-83c4-56ec-8d7d" name="Left Arm" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="188c-d580-8d57-496f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="185c-4323-a22d-81d0" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="07a7-192b-922d-6863" name="Left Arm" hidden="false" collective="false" import="true" targetId="5e51-59d7-9e48-ec36" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3220-86a7-d563-c796" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aef1-936f-d975-7701" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b122-cf1d-111b-3800" name="Right Arm" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b75a-660d-086a-d295" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f42-d617-dff6-8ff9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3e32-115d-b936-db3f" name="Right Arm" hidden="false" collective="false" import="true" targetId="a864-4bd5-c93c-6738" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ada-49a1-bb55-6183" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42b8-6588-cb20-d86c" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6687-b9cb-210f-03f0" name="Tactical Subsystem" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="faa5-b673-ffdc-68d5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4032-eaa2-bafe-a195" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7133-e38a-70ea-ac3b" name="Tactical Subsystem" hidden="false" collective="false" import="true" targetId="22b2-dbab-c723-13ad" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79f9-c44e-af4d-fad0" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f48c-ffda-2211-225f" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="19.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="33f6-ca6e-4ede-d778" name="Grey Wolf Core" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="bd96-ca21-b86a-6fe6" name="Grey Wolf Core" hidden="false" typeId="5441-d3da-946e-879a" typeName="Mech">
+          <characteristics>
+            <characteristic name="E" typeId="5d80-cc77-5c6f-d76b">8</characteristic>
+            <characteristic name="H" typeId="8276-1967-ffec-e447">3/6/9</characteristic>
+            <characteristic name="HP" typeId="6635-e02d-2375-67be">40</characteristic>
+            <characteristic name="ARM" typeId="2c93-ac69-f9fc-0e48">2</characteristic>
+            <characteristic name="FW" typeId="78bc-50ed-1471-ae75">3</characteristic>
+            <characteristic name="L" typeId="7330-ca8b-db32-794a">1</characteristic>
+            <characteristic name="Mech Ability" typeId="7ba0-c2db-4911-97b3">Pack Hunter: Attacks made by this Mech targeting an enemy unit that has suffered damage this Turn from another friendly Mech gain +1BAL and +1AP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0210-5af6-fd45-691d" name="Chassis" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee82-afbd-2798-d72e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d4d-f41a-5c10-119d" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7cae-c8a5-f908-384a" name="Chassis" hidden="false" collective="false" import="true" targetId="b4dc-b659-7949-cddf" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c50-680e-7969-1b03" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da9f-15d3-ab66-d89c" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="32fc-34ab-0057-eead" name="Pilot" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f37-4ed0-8a9d-07c7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="056d-2c38-2f0c-4329" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="376a-b647-4b16-f4fc" name="Designated Marksman" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="6eb0-3bee-a61d-895e" name="Designated Marksman" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
+                  <characteristics>
+                    <characteristic name="INT" typeId="819a-ac56-3e01-da45">4</characteristic>
+                    <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">4</characteristic>
+                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">3</characteristic>
+                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Spotter: Mechs hit by an attack from this model gain 1 Sat-Lock E-War token.  Sat-Lock is an E-War effect, friendly mechs shooting at a Sat-Locked target gain +1 Ballistics.  Sat-Locked models may never benefit from wargear that improves AGL.  Sat-Locked models are also Painted.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cee1-16fc-21bc-e874" name="Rifleman" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="c54d-4368-6b20-31d3" name="Rifleman" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
+                  <characteristics>
+                    <characteristic name="INT" typeId="819a-ac56-3e01-da45">2</characteristic>
+                    <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">3</characteristic>
+                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">2</characteristic>
+                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Focus: At the start of this Mech&apos;s activation, this Mech receives one Focus Token.  This Focus Token can be spent to reroll one single d12 during an E-War or Attack action.  Discard all unused Focus Tokens during the Initiative Bid.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="2.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c80d-c0c8-a4fd-accf" name="Left Arm" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7fb-63f9-f990-9ace" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c58d-d428-26ca-4518" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e148-e3ff-4b0e-4c24" name="Left Arm" hidden="false" collective="false" import="true" targetId="5e51-59d7-9e48-ec36" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f9f-0926-7862-b194" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4895-3682-1ab7-1047" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4f46-a441-526b-9945" name="Right Arm" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1125-b491-ea5a-49b1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0da9-ede6-7fc7-c9c4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f892-a2ad-4514-40c3" name="Right Arm" hidden="false" collective="false" import="true" targetId="a864-4bd5-c93c-6738" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aa9-2d67-594b-930a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b7e-f6db-3b9a-f747" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c230-cd54-4e17-6b5c" name="Tactical Subsystem" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b83a-5f29-6ba7-3a6d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df99-1b3e-3532-b85e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="91b6-ef45-375e-65e3" name="Tactical Subsystem" hidden="false" collective="false" import="true" targetId="22b2-dbab-c723-13ad" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36c2-a7e8-574e-7f8a" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1180-62da-e796-43e0" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="19.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0912-4d97-fc2f-0099" name="Alligator E-War Core" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="8f1a-cb23-fbae-950a" name="Alligator E-War Core" hidden="false" typeId="5441-d3da-946e-879a" typeName="Mech">
+          <characteristics>
+            <characteristic name="E" typeId="5d80-cc77-5c6f-d76b">8</characteristic>
+            <characteristic name="H" typeId="8276-1967-ffec-e447">4/7/10</characteristic>
+            <characteristic name="HP" typeId="6635-e02d-2375-67be">44</characteristic>
+            <characteristic name="ARM" typeId="2c93-ac69-f9fc-0e48">3</characteristic>
+            <characteristic name="FW" typeId="78bc-50ed-1471-ae75">3</characteristic>
+            <characteristic name="L" typeId="7330-ca8b-db32-794a">1</characteristic>
+            <characteristic name="Mech Ability" typeId="7ba0-c2db-4911-97b3">Overclock (1E4H): Until the end of its activation, this Mech rolls an additional dice on E-War attack rolls, and discards one dice of the controlling player&apos;s choice.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a426-f377-3380-253f" name="Chassis" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3b5-b1c2-2c2f-3f63" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ad2-177a-fa89-32e2" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="fbd8-69c5-d82d-7b5d" name="Chassis" hidden="false" collective="false" import="true" targetId="b4dc-b659-7949-cddf" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bec6-8030-5eee-fc1a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e30-9f10-a4cb-13fe" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="87df-f964-0499-10a1" name="Pilot" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e5f-1f00-589e-60a0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e8d-d83e-1ada-3747" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b5b1-cf43-f03f-cf25" name="Designated Marksman" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="da2e-1b5c-ebca-a37a" name="Designated Marksman" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
+                  <characteristics>
+                    <characteristic name="INT" typeId="819a-ac56-3e01-da45">4</characteristic>
+                    <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">4</characteristic>
+                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">3</characteristic>
+                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Spotter: Mechs hit by an attack from this model gain 1 Sat-Lock E-War token.  Sat-Lock is an E-War effect, friendly mechs shooting at a Sat-Locked target gain +1 Ballistics.  Sat-Locked models may never benefit from wargear that improves AGL.  Sat-Locked models are also Painted.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="76b9-7475-8960-6ad2" name="Left Arm" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e3e-de59-5a09-44df" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1ba-cc8b-58b2-ebf7" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="096e-9b52-4343-24bb" name="Left Arm" hidden="false" collective="false" import="true" targetId="5e51-59d7-9e48-ec36" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc1b-385f-650c-85b0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39ed-a073-6811-c216" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5148-8ed9-d0a2-3864" name="Right Arm" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9270-329b-2c24-c2e5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfc4-bb90-0f51-e8cf" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="cbe7-118f-3bdd-1dab" name="Right Arm" hidden="false" collective="false" import="true" targetId="a864-4bd5-c93c-6738" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="594c-79dc-8730-dcc9" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87c5-7565-e6a2-1446" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d953-d4ae-befa-87ff" name="Tactical Subsystem" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a75a-280b-c7a8-f5f2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e92c-12b4-6c10-c463" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="24aa-111b-290a-a3a7" name="Tactical Subsystem" hidden="false" collective="false" import="true" targetId="22b2-dbab-c723-13ad" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25b1-5d96-680a-ab07" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9b9-6560-674a-3f63" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="19.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6e46-c251-d424-4393" name="Ox Assault Core" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="2b34-aebe-7dab-4409" name="Ox Assault Core" hidden="false" typeId="5441-d3da-946e-879a" typeName="Mech">
+          <characteristics>
+            <characteristic name="E" typeId="5d80-cc77-5c6f-d76b">8</characteristic>
+            <characteristic name="H" typeId="8276-1967-ffec-e447">4/7/10</characteristic>
+            <characteristic name="HP" typeId="6635-e02d-2375-67be">48</characteristic>
+            <characteristic name="ARM" typeId="2c93-ac69-f9fc-0e48">4</characteristic>
+            <characteristic name="FW" typeId="78bc-50ed-1471-ae75">2</characteristic>
+            <characteristic name="L" typeId="7330-ca8b-db32-794a">1</characteristic>
+            <characteristic name="Mech Ability" typeId="7ba0-c2db-4911-97b3">Bull Rush: This Mech gains 1 point of Damage Reduction for each visible enemy model in its forward arc.  Damage Reduction reduces all incoming instances of damage by 1 damage per point of DR regardless of the attack&apos;s AP.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0171-1fff-7709-29b1" name="Chassis" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bf2-0c57-cdf7-80cf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f78-3992-afb2-18f5" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="66bf-5e32-28a0-1883" name="Chassis" hidden="false" collective="false" import="true" targetId="b4dc-b659-7949-cddf" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ba-664d-2e6e-0934" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc5a-8aae-1457-b216" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c9ac-4c0a-0343-2650" name="Pilot" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eba5-af83-567c-7d26" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4eb7-a592-7732-77e2" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6a6a-db33-c80b-8a85" name="Designated Marksman" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="7665-5688-9426-7e52" name="Designated Marksman" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
+                  <characteristics>
+                    <characteristic name="INT" typeId="819a-ac56-3e01-da45">4</characteristic>
+                    <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">4</characteristic>
+                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">3</characteristic>
+                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Spotter: Mechs hit by an attack from this model gain 1 Sat-Lock E-War token.  Sat-Lock is an E-War effect, friendly mechs shooting at a Sat-Locked target gain +1 Ballistics.  Sat-Locked models may never benefit from wargear that improves AGL.  Sat-Locked models are also Painted.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ed36-df14-94e2-3dfc" name="Left Arm" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a87-f5ce-357f-6439" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd33-e557-1d90-4bb5" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9556-8645-f994-a42b" name="Left Arm" hidden="false" collective="false" import="true" targetId="5e51-59d7-9e48-ec36" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42f3-b9cc-d5f9-c91a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fb2-4d5a-728e-2c3f" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8da2-1f2c-a589-560c" name="Right Arm" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51f9-95ce-837e-19f1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f610-1e34-7fc6-48c7" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4e25-b48d-ec9d-2236" name="Right Arm" hidden="false" collective="false" import="true" targetId="a864-4bd5-c93c-6738" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd7f-f6e1-266c-13cd" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe28-d4a4-a7f8-9ae0" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7037-3f87-486f-d2b4" name="Tactical Subsystem" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dac-e690-de15-e3a3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4437-c8aa-7b91-07b6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3abd-8e86-e849-9e66" name="Tactical Subsystem" hidden="false" collective="false" import="true" targetId="22b2-dbab-c723-13ad" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2494-0fb8-e05b-194b" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14f7-1467-0cc8-bfa6" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="19.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="2992-fa9d-7864-f32a" name="UN Faction Reaction: Riposte" hidden="false">
+      <description>(1E1H) If this Mech was targeted by an attack and was not hit, this Mech may declare the use of this reaction.  This Mech may make 1 attack targeting the model that attacked and missed, paying the Energy and Heat cost of the attack as normal.
+</description>
+    </rule>
+    <rule id="254a-363a-2c56-3a94" name="UN Faction Reaction: Technological Superiority" hidden="false">
+      <description>(1E2H) This Mech may declare this reaction when it is targeted by an attack from a Mech with one or more E-War tokens or effects on it.  This Mech may immediately perform 1 E-War action, paying its Energy and Heat cost as normal.</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="b4dc-b659-7949-cddf" name="Chassis" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="dc06-da18-6d6f-5cfc" name="Spec-Ops Chassis" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="3fbc-3a7d-95a6-eeb8" name="Spec-Op Chassis" hidden="false" typeId="16f3-1fba-9887-f57c" typeName="Chassis">
+              <characteristics>
+                <characteristic name="MOV" typeId="7d46-f7bf-d3dc-2cc0">8</characteristic>
+                <characteristic name="AGL" typeId="6d7a-9220-a9f8-0f18">15</characteristic>
+                <characteristic name="Special" typeId="96ad-f55e-2fc5-b289"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9f67-7433-62fe-9c9c" name="Striker Chassis" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="b785-c758-1f36-2f05" name="Striker Chassis" hidden="false" typeId="16f3-1fba-9887-f57c" typeName="Chassis">
+              <characteristics>
+                <characteristic name="MOV" typeId="7d46-f7bf-d3dc-2cc0">9</characteristic>
+                <characteristic name="AGL" typeId="6d7a-9220-a9f8-0f18">14</characteristic>
+                <characteristic name="Special" typeId="96ad-f55e-2fc5-b289">Danger Close: This Mech gains +1 BAL, CC, AGL, ARM and FW while within 8&quot; of an enemy model.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a8f5-c9a4-5412-9326" name="Steath Chassis" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="c94e-3132-f980-b3f5" name="Stealth Chassis" hidden="false" typeId="16f3-1fba-9887-f57c" typeName="Chassis">
+              <characteristics>
+                <characteristic name="MOV" typeId="7d46-f7bf-d3dc-2cc0">10</characteristic>
+                <characteristic name="AGL" typeId="6d7a-9220-a9f8-0f18">16</characteristic>
+                <characteristic name="Special" typeId="96ad-f55e-2fc5-b289">Strike and Fade: During the Initiative Bid, if this Mech is in the Optical Camo state or is out of TLOS of every enemy model, it may choose to set its INT to 11.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="6.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="5e51-59d7-9e48-ec36" name="Left Arm" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="3ff5-71e0-c7e8-3f78" name="Laser Pistol + Vibroblade" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="6809-5fdb-82b6-870c" name="Laser Pistol" hidden="false" targetId="e845-7021-b418-c997" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2f3d-fa48-e245-0b77" name="Laser SMG + Jump Jet" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="7326-ba91-bb1c-43a5" name="Laser SMG" hidden="false" targetId="38c0-c3ff-85bf-0264" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1a18-4a4c-d2d2-c8d9" name="Rainstorm Pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="4479-a04d-32d7-036a" name="Rainstorm Pistol" hidden="false" targetId="cab6-ebb1-999f-8636" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="da8d-0872-59cc-0d75" name="MLRS Pod" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="ae34-a2d4-ef5c-d992" name="MLRS Pod" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Action (*E*H): Launch 1 MLRS Missile per 1E1H spent on this action.  Place 1 MLRS Missile in B2B with this model.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="b3b0-03da-dded-8278" name="MLRS Missile" hidden="false" typeId="7b43-5b30-10ac-5318" typeName="Smart Munition">
+              <characteristics>
+                <characteristic name="MOV" typeId="2395-cc5b-d0e8-beab">18&quot;</characteristic>
+                <characteristic name="AGL" typeId="5997-853e-2001-7dc1">22</characteristic>
+                <characteristic name="HP" typeId="b1fe-d130-ea89-69a7">1 * Missile Count</characteristic>
+                <characteristic name="ARM" typeId="39ac-47b6-9832-a80e">2</characteristic>
+                <characteristic name="FW" typeId="ffea-1393-8d8f-62f3">2</characteristic>
+                <characteristic name="Damage" typeId="bbeb-6f06-4059-5e45">1d12 * Missile Count + 6</characteristic>
+                <characteristic name="AP" typeId="cefe-f546-d4e9-7e74">2</characteristic>
+                <characteristic name="Behavior" typeId="1078-7900-747a-5c6d">When the MLRS Missile activates, it may turn up to 90 degrees to face directly towards the closest enemy model, and then moves its MOV directly forward.  If this Smart Munition enters B2B with an enemy model, it immediately detonates and deals damage to all models in B2B with it, then is removed from the table.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0bba-11c5-1258-573a" name="Gauss Rifle + Combat Blade" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b0fb-9c15-7674-58ae" name="Vibroblade + Grenade Pod" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="b075-d1c4-6612-5988" name="Grenade Pod" hidden="false" targetId="251a-8b93-4aa0-8c99" type="profile"/>
+            <infoLink id="56e1-e58b-6125-732b" name="Grenade Mine" hidden="false" targetId="581c-8199-adfb-3f0f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="085d-45ea-a02c-cb8b" name="Ion Cannon Support Arm" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4a61-6622-9aab-0c41" name="Monowire Whip" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="7095-6f14-c103-95a6" name="Monowire Whip" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be"/>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71"/>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d"/>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4"/>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb"/>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4"/>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Critical (18+) Quickhack: The defending model gains one E-War token of the attacker&apos;s choice.
+Virus Injection: If a model is hit by an attack with this weapon, after the attack is resolved the defending model gains one E-War token of the attacker&apos;s choice.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c73b-277a-5ea8-0110" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="cc1d-756a-ab38-4c10" name="Gauss Rifle + Meteor Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="5422-bd79-2139-59d6" name="Meteor Shield" hidden="false" targetId="ee70-5cd0-982a-9ba0" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b514-571f-819a-9904" name="Vibroblade" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="acca-685b-b480-75fe" name="Piston Spear + Meteor Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="1e23-23d3-6682-d201" name="Meteor Shield" hidden="false" targetId="ee70-5cd0-982a-9ba0" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c87a-6f75-ff87-bfcc" name="Shotgun + Grenade Pod" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="626f-1f85-5105-5e27" name="Grenade Mine" hidden="false" targetId="581c-8199-adfb-3f0f" type="profile"/>
+            <infoLink id="4326-8088-9d97-2abe" name="Grenade Pod" hidden="false" targetId="251a-8b93-4aa0-8c99" type="profile"/>
+            <infoLink id="4ab8-10cf-a2c9-3901" name="Shotgun" hidden="false" targetId="8d97-bb83-a4a0-ce1b" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a864-4bd5-c93c-6738" name="Right Arm" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="458e-cf2c-8720-46bb" name="Laser Sniper Rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ac6e-99f3-4931-8f35" name="Laser Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="732e-8af8-544e-e0d6" name="Laser Assault Rifle" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">1E2H</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">12-24&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">5</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+4</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">2</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="daf9-93a3-9545-5050" name="Laser SMG + Jump Jet" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="a5a0-9a2e-3e78-31df" name="Laser SMG" hidden="false" targetId="38c0-c3ff-85bf-0264" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e712-99c5-f33b-f81e" name="Laser Cannon + Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="6437-0359-feb9-61fa" name="Laser Cannon" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E3H</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">16-32&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+12</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">4</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="9dff-92b5-bfd0-55e1" name="Shield" hidden="false" targetId="c039-c14d-f701-0a41" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="cc85-4749-53a9-5bef" name="Rainstorm Pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="5fdd-3941-f29f-37f5" name="Rainstorm Pistol" hidden="false" targetId="cab6-ebb1-999f-8636" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="343d-8a73-c50e-a5eb" name="Laser Marksman Rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d514-055e-b573-0226" name="Ion Cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="8919-c89b-b66f-595f" name="Ion Cannon" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">6E5H</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">24-60&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">4d12+10</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">5</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Models hit by this weapon suffer Particle Burn.  Particle Burn: At the start of a model’s activation, it suffers 1d12 AP0 damage and Particle Burn expires.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="acf5-1041-4848-b4af" name="Laser SMG" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="5879-71cd-1b1d-bebe" name="Laser SMG" hidden="false" targetId="38c0-c3ff-85bf-0264" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dd13-741c-209f-1066" name="Ion Shotgun" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="086a-e692-7489-5a59" name="Ion Shotgun" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">6E5H</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">0-8&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">2</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">3d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">3d12+2</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">5</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Models hit by this weapon suffer Particle Burn.  Particle Burn: At the start of a model’s activation, it suffers 1d12 AP0 damage and Particle Burn expires.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c16c-8186-658d-f039" name="Monomolecular Claymore" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="63a5-c527-37cd-3fc0" name="Monomolecular Claymore" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">5E5H</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">2</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">3d12</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">3</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Critical (22+) Monomolecular Edge: This attack deals 1d12 additional damage and is resolved at AP11.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8e26-32dd-08ec-1419" name="Shotgun + Piston Spear" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="8ec8-9493-be97-524d" name="Shotgun" hidden="false" targetId="8d97-bb83-a4a0-ce1b" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0805-e2d3-6d93-3da9" name="Laser Pistol + Vibroblade" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="e497-f079-d381-0d2a" name="Laser Pistol" hidden="false" targetId="e845-7021-b418-c997" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d92e-3ee6-8831-6bac" name="Vibroblade + Grenade Pod" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="f94f-9998-0287-599a" name="Grenade Pod" hidden="false" targetId="251a-8b93-4aa0-8c99" type="profile"/>
+            <infoLink id="651e-1209-b154-403d" name="Grenade Mine" hidden="false" targetId="581c-8199-adfb-3f0f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2be4-7b1d-2e56-1aa0" name="Vibroblade" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="22b2-dbab-c723-13ad" name="Tactical Subsystem" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="83a5-ac09-f152-5f49" name="Armor Accumulator" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="5bad-47dd-1b83-3496" name="Armor Accumulator" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Nanite Reinforcement: This Mech gains +1 ARM for each 5 points of damage it has taken.  This bonus ARM caps at +5.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bb24-c11f-8b83-0663" name="Rattlesnake Mine Rack" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="cc07-27e7-a117-24fc" name="Rattlesnake Mine Rack" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Action(1E1H): Deploy 1 Rattlesnake Mine in Armed Mode.  Place a Rattlesnake Mine (Armed) miniature within 4&quot; of this mech.  Action (2E1H): Launch 1 Rattlesnake Mine in Flight Mode.  Place one Rattlesnake Mine (Flight) miniature in base-to-base contact with this Mech.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="0132-3623-031a-09d1" name="Rattlesnake Mine" hidden="false" typeId="7b43-5b30-10ac-5318" typeName="Smart Munition">
+              <characteristics>
+                <characteristic name="MOV" typeId="2395-cc5b-d0e8-beab">8</characteristic>
+                <characteristic name="AGL" typeId="5997-853e-2001-7dc1">18</characteristic>
+                <characteristic name="HP" typeId="b1fe-d130-ea89-69a7">6</characteristic>
+                <characteristic name="ARM" typeId="39ac-47b6-9832-a80e">0</characteristic>
+                <characteristic name="FW" typeId="ffea-1393-8d8f-62f3">2</characteristic>
+                <characteristic name="Damage" typeId="bbeb-6f06-4059-5e45">2d12+4</characteristic>
+                <characteristic name="AP" typeId="cefe-f546-d4e9-7e74">3</characteristic>
+                <characteristic name="Behavior" typeId="1078-7900-747a-5c6d">Rattlesnake Mines in Flight Mode may move freely, Rattlesnake Mines in Armed Mode may no longer move and may not return to Flight Mode.  If they enter base contact with an enemy model, they immediately explode without an attack roll, dealing damage to all models within 2&quot;.  After moving, a Rattlesnake Mine may also Arm itself.  Replace the Rattlesnake Mine (Flight) model with a Rattlesnake Mine (Armed) model.  If an enemy model moves within 2&quot; of an Armed Rattlesnake Mine, the mine immediately detonates without an attack roll, dealing damage to all models within 2&quot;.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4c4c-fc5c-8d97-1c5a" name="Coolant Pack" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8f4e-3914-3184-5a61" name="Ion Cannon Support System" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="54c0-8fa6-4eed-e53d" name="MLRS Ammo Rack" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="b502-0d23-616b-bdcf" name="MLRS Ammo Pack" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Autoloaders (1E1H): Reload one equipped MLRS weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8ba4-dea4-0ee5-7575" name="Overload Rack" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="9816-b064-d624-bf64" name="Overload Rack" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Capacitor Drain (Once per activation): Gain 2 Energy and generate 2 Heat.  If this Mech&apos;s current energy is 3 or less after gaining Energy, gain 1 additional Energy.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="81f0-23ed-06be-df05" name="Signal Jammer Pod" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="8211-8f0a-eafc-f41d" name="Signal Jammer Pod" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Jam Communications (2E1H): Make 3 E-War attack rolls (2d12).  For each roll of 14+, assign one Jam E-War token to any enemy model within 12” of this Mech, or any enemy model within 12” of a friendly Uplink.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="da68-9ead-87ce-2634" name="Barricade Rack" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="513e-408f-48f0-e46b" name="Jetpack" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="57c8-e90e-1c7b-d85f" name="Uplink Rack" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="086f-e0bb-bba5-d7d1" name="E-War: Painted" hidden="false">
+      <description>E-War Effect: Painted models may be selected as a Locked Target by any Smart Munition upon launch.</description>
+    </rule>
+    <rule id="8950-2cb9-4920-f0d7" name="E-War: Jam" hidden="false">
+      <description>E-War effect: Comms Disruption.  Reduce INT and Link by 1.  If this model is a Linked Drone, immediately break its Link.  If this model is a Guided Deployable, it may not pivot before its Movement.  Crippling E-War effect: This Mech may not use its Pilot Ability.  If this model is a Smart Munition, its ownership shifts to the player who initiated the E-War action.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="c039-c14d-f701-0a41" name="Shield" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Reaction: Brace For Impact (2E2H) When targeted by an attack, this Mech may perform this reaction.  Gain +2ARM during this attack.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6146-63a7-ec7c-d56d" name="Buckler" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Reaction: Deflect (1E2H) When targeted by an attack, this Mech may perform this reaction.  Gain +1ARM during this attack.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6de6-eb54-7cd5-32ae" name="Gauss Rifle" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be"/>
+        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71"/>
+        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d"/>
+        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4"/>
+        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb"/>
+        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4"/>
+        <characteristic name="Special" typeId="7150-9125-f07c-d927"/>
+      </characteristics>
+    </profile>
+    <profile id="ee70-5cd0-982a-9ba0" name="Meteor Shield" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Reaction: Polarized Energy Field (2E3H) When targeted by an attack, this Mech may perform this reaction.  Gain +1ARM during this attack, and if this Mech takes damage during the attack, the attacker suffers 1d12+2 AP0 damage.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e845-7021-b418-c997" name="Laser Pistol" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E2H</characteristic>
+        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">0-12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">3</characteristic>
+        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+4</characteristic>
+        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">3</characteristic>
+        <characteristic name="Special" typeId="7150-9125-f07c-d927">Dual Wield: If this model is equipped with two Laser Pistols, resolve 2 additional shots and generate an additional 1H each time this model attacks with a Laser Pistol.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ea64-9f11-d216-98bb" name="Vibroblade" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be"/>
+        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71"/>
+        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d"/>
+        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4"/>
+        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb"/>
+        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4"/>
+        <characteristic name="Special" typeId="7150-9125-f07c-d927"/>
+      </characteristics>
+    </profile>
+    <profile id="38c0-c3ff-85bf-0264" name="Laser SMG" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E2H</characteristic>
+        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">0-16&quot;</characteristic>
+        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">4</characteristic>
+        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+4</characteristic>
+        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">3</characteristic>
+        <characteristic name="Special" typeId="7150-9125-f07c-d927">Dual Wield: If this model is equipped with two Laser SMGs, resolve 3 additional shots and generate an additional 2H each time this model attacks with a Laser SMG.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="924f-e43f-35f7-32eb" name="Piston Spear" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be"/>
+        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71"/>
+        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d"/>
+        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4"/>
+        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb"/>
+        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4"/>
+        <characteristic name="Special" typeId="7150-9125-f07c-d927"/>
+      </characteristics>
+    </profile>
+    <profile id="cab6-ebb1-999f-8636" name="Rainstorm Pistol" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">*E*H</characteristic>
+        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">0-8&quot;</characteristic>
+        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">*</characteristic>
+        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">3d12</characteristic>
+        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+2</characteristic>
+        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">*</characteristic>
+        <characteristic name="Special" typeId="7150-9125-f07c-d927">Capacitor Bank: When this model attacks using a Rainstorm Pistol, select a shot count X, less than or equal to this model&apos;s remaining Energy.  This attack has Action Cost XEXH, Attacks X, and AP X.  </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8d97-bb83-a4a0-ce1b" name="Shotgun" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E3H</characteristic>
+        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">0-12&quot;</characteristic>
+        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">2</characteristic>
+        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">3d12</characteristic>
+        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+3</characteristic>
+        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">1</characteristic>
+        <characteristic name="Special" typeId="7150-9125-f07c-d927">Shred: Models hit by an attack from this weapon have their ARM reduced by 1 until the start of their next activation.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="251a-8b93-4aa0-8c99" name="Grenade Pod" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E2H</characteristic>
+        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">12-24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+2</characteristic>
+        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">2</characteristic>
+        <characteristic name="Special" typeId="7150-9125-f07c-d927">Arcing Fire: This attack can target models out of LOS.  If the target of the attack is out of LOS, this model suffers a -6 penalty to Ballistics.  Proximity Grenade: This attack can target a point on the battlefield instead of an enemy model.  If this target is chosen, roll against a fixed Agility value of 16.  If the attack is a success, place a Grenade marker on the battlefield at the chosen target point.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a0d7-2e0f-ec6f-d267" name="Jump Jet" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Vectored Thrusters: When this model Shifts, it may pay an additional cost of 1E1H to move an additional 2&quot;.  If this model is equipped with two Jump Jets, it moves an additional 4&quot; instead.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="581c-8199-adfb-3f0f" name="Grenade Mine" hidden="false" typeId="7b43-5b30-10ac-5318" typeName="Smart Munition">
+      <characteristics>
+        <characteristic name="MOV" typeId="2395-cc5b-d0e8-beab">0</characteristic>
+        <characteristic name="AGL" typeId="5997-853e-2001-7dc1">14</characteristic>
+        <characteristic name="HP" typeId="b1fe-d130-ea89-69a7">8</characteristic>
+        <characteristic name="ARM" typeId="39ac-47b6-9832-a80e">2</characteristic>
+        <characteristic name="FW" typeId="ffea-1393-8d8f-62f3">1</characteristic>
+        <characteristic name="Damage" typeId="bbeb-6f06-4059-5e45">2d12</characteristic>
+        <characteristic name="AP" typeId="cefe-f546-d4e9-7e74">0</characteristic>
+        <characteristic name="Behavior" typeId="1078-7900-747a-5c6d">If an enemy unit moves within 2&quot; of this model, it immediately detonates, dealing its damage to all models within 2&quot;.  Then it is removed from the game.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

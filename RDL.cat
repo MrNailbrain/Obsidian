@@ -950,7 +950,7 @@
             <profile id="3fbc-3a7d-95a6-eeb8" name="Standard Chassis" hidden="false" typeId="16f3-1fba-9887-f57c" typeName="Chassis">
               <characteristics>
                 <characteristic name="MOV" typeId="7d46-f7bf-d3dc-2cc0">8</characteristic>
-                <characteristic name="AGL" typeId="6d7a-9220-a9f8-0f18">15</characteristic>
+                <characteristic name="AGL" typeId="6d7a-9220-a9f8-0f18">13</characteristic>
                 <characteristic name="Special" typeId="96ad-f55e-2fc5-b289"/>
               </characteristics>
             </profile>
@@ -964,7 +964,7 @@
             <profile id="b785-c758-1f36-2f05" name="Armored Chassis" hidden="false" typeId="16f3-1fba-9887-f57c" typeName="Chassis">
               <characteristics>
                 <characteristic name="MOV" typeId="7d46-f7bf-d3dc-2cc0">6</characteristic>
-                <characteristic name="AGL" typeId="6d7a-9220-a9f8-0f18">13</characteristic>
+                <characteristic name="AGL" typeId="6d7a-9220-a9f8-0f18">11</characteristic>
                 <characteristic name="Special" typeId="96ad-f55e-2fc5-b289">+1 ARM</characteristic>
               </characteristics>
             </profile>
@@ -978,7 +978,7 @@
             <profile id="c94e-3132-f980-b3f5" name="Mobility Chassis" hidden="false" typeId="16f3-1fba-9887-f57c" typeName="Chassis">
               <characteristics>
                 <characteristic name="MOV" typeId="7d46-f7bf-d3dc-2cc0">11</characteristic>
-                <characteristic name="AGL" typeId="6d7a-9220-a9f8-0f18">16</characteristic>
+                <characteristic name="AGL" typeId="6d7a-9220-a9f8-0f18">14</characteristic>
                 <characteristic name="Special" typeId="96ad-f55e-2fc5-b289"/>
               </characteristics>
             </profile>
@@ -1176,6 +1176,28 @@
             <cost name="Points" typeId="8e0a-942d-4e72-f585" value="2.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="7975-275c-a5e8-048a" name="Cleaver + Machinegun + Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="808b-f185-00fc-2a09" name="Cleaver" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E2H</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+6</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">2</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Critical (24+) Amputate: Remove an arm of defending player’s choice on target mech.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="6ff2-c19a-5110-1f8a" name="Shield" hidden="false" targetId="c039-c14d-f701-0a41" type="profile"/>
+            <infoLink id="c307-cf95-3be0-f88a" name="Machinegun" hidden="false" targetId="f9c9-3242-d4ac-cd0f" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="4.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="a864-4bd5-c93c-6738" name="Right Arm" hidden="false" collective="false" import="true">
@@ -1356,28 +1378,6 @@
           </rules>
           <costs>
             <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="dadd-3ce5-a3bd-c650" name="Cleaver + Machinegun + Shield" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="54ee-0adf-4081-80d6" name="Cleaver" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E2H</characteristic>
-                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
-                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
-                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
-                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+6</characteristic>
-                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">2</characteristic>
-                <characteristic name="Special" typeId="7150-9125-f07c-d927">Critical (24+) Amputate: Remove an arm of defending player’s choice on target mech.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="c729-88c3-3929-abd6" name="Shield" hidden="false" targetId="c039-c14d-f701-0a41" type="profile"/>
-            <infoLink id="20b0-537a-39d7-2490" name="Machinegun" hidden="false" targetId="f9c9-3242-d4ac-cd0f" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a5dc-51d4-4f23-5aa9" name="Submachine Gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1647,7 +1647,7 @@
         <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
         <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+4</characteristic>
         <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">1</characteristic>
-        <characteristic name="Special" typeId="7150-9125-f07c-d927"></characteristic>
+        <characteristic name="Special" typeId="7150-9125-f07c-d927"/>
       </characteristics>
     </profile>
     <profile id="bb70-2afc-f49a-2b19" name="Sabre" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
