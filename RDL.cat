@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a121-69b5-de2c-f2db" name="RDL" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="2137-ec53-3f2e-4674" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a121-69b5-de2c-f2db" name="RDL" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="2137-ec53-3f2e-4674" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="da46-9acf-9a49-7df6" name="Battle Core" hidden="false" collective="false" import="true" type="unit">
       <profiles>
