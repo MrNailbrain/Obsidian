@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a121-69b5-de2c-f2db" name="UN" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="2137-ec53-3f2e-4674" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e185-42c8-5e7e-83bc" name="UN" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="2137-ec53-3f2e-4674" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="3c27-c1e4-297d-fc7f" name="Viper Low Signal Core" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -37,18 +37,26 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="17c3-493c-9095-b585" name="Designated Marksman" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="3ca1-a14a-6463-eaee" name="Designated Marksman" hidden="false" targetId="b796-f701-2f70-bcb8" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f8c1-a2d6-5820-1ae1" name="&quot;Spectre&quot;" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="1d34-495a-5f9e-a82f" name="Designated Marksman" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
+                <profile id="8ea9-168a-9079-2e2f" name="&quot;Spectre&quot;" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
                   <characteristics>
                     <characteristic name="INT" typeId="819a-ac56-3e01-da45">4</characteristic>
                     <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">4</characteristic>
-                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">3</characteristic>
-                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Spotter: Mechs hit by an attack from this model gain 1 Sat-Lock E-War token.  Sat-Lock is an E-War effect, friendly mechs shooting at a Sat-Locked target gain +1 Ballistics.  Sat-Locked models may never benefit from wargear that improves AGL.  Sat-Locked models are also Painted.</characteristic>
+                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">4</characteristic>
+                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Reaction: Flicker (3E3H) - When this Mech is targeted by an attack from within its TLOS, it may declare the use of this reaction.  This attack automatically misses.  Then, this Mech may move up to 2&quot;.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="9.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -97,7 +105,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="19.0"/>
+        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="26.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4a3a-68ca-dd21-0752" name="Lynx Core" hidden="false" collective="false" import="true" type="unit">
@@ -136,18 +144,26 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="a411-42ee-60fe-40cf" name="Designated Marksman" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="db64-2cbc-ccdc-6cb0" name="Designated Marksman" hidden="false" targetId="b796-f701-2f70-bcb8" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f501-9e44-c331-3445" name="&quot;Eagle&quot;" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="4e5f-094b-5364-7690" name="Designated Marksman" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
+                <profile id="2e48-8af7-7f8e-0635" name="&quot;Eagle&quot;" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
                   <characteristics>
-                    <characteristic name="INT" typeId="819a-ac56-3e01-da45">4</characteristic>
-                    <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">4</characteristic>
+                    <characteristic name="INT" typeId="819a-ac56-3e01-da45">2</characteristic>
+                    <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">2</characteristic>
                     <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">3</characteristic>
-                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Spotter: Mechs hit by an attack from this model gain 1 Sat-Lock E-War token.  Sat-Lock is an E-War effect, friendly mechs shooting at a Sat-Locked target gain +1 Ballistics.  Sat-Locked models may never benefit from wargear that improves AGL.  Sat-Locked models are also Painted.</characteristic>
+                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Air Support (2E1H): Choose 1 of this Mech&apos;s Linked Drones anywhere on the table, and place it in B2B with this model.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -196,7 +212,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="19.0"/>
+        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="24.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="535b-f3c4-8aa9-20ba" name="Octopus Invisible Core" hidden="false" collective="false" import="true" type="unit">
@@ -240,18 +256,26 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="c7b9-a35d-d6fb-7556" name="Designated Marksman" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="9242-df22-6012-1f48" name="Designated Marksman" hidden="false" targetId="b796-f701-2f70-bcb8" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bb3c-f031-aec7-ff6c" name="&quot;Ghost&quot;" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="1b22-d8e6-3ef4-9db9" name="Designated Marksman" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
+                <profile id="2ef8-2f97-20ed-1680" name="&quot;Ghost&quot;" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
                   <characteristics>
-                    <characteristic name="INT" typeId="819a-ac56-3e01-da45">4</characteristic>
+                    <characteristic name="INT" typeId="819a-ac56-3e01-da45">5</characteristic>
                     <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">4</characteristic>
-                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">3</characteristic>
-                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Spotter: Mechs hit by an attack from this model gain 1 Sat-Lock E-War token.  Sat-Lock is an E-War effect, friendly mechs shooting at a Sat-Locked target gain +1 Ballistics.  Sat-Locked models may never benefit from wargear that improves AGL.  Sat-Locked models are also Painted.</characteristic>
+                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">2</characteristic>
+                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Ghost in the Night: If this Mech is in the Optical Camo state when it performs an attack, the targeted enemy model cannot React to this attack.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="7.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -300,7 +324,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="19.0"/>
+        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="30.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="33f6-ca6e-4ede-d778" name="Grey Wolf Core" hidden="false" collective="false" import="true" type="unit">
@@ -339,16 +363,9 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="376a-b647-4b16-f4fc" name="Designated Marksman" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="6eb0-3bee-a61d-895e" name="Designated Marksman" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
-                  <characteristics>
-                    <characteristic name="INT" typeId="819a-ac56-3e01-da45">4</characteristic>
-                    <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">4</characteristic>
-                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">3</characteristic>
-                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Spotter: Mechs hit by an attack from this model gain 1 Sat-Lock E-War token.  Sat-Lock is an E-War effect, friendly mechs shooting at a Sat-Locked target gain +1 Ballistics.  Sat-Locked models may never benefit from wargear that improves AGL.  Sat-Locked models are also Painted.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink id="46c1-8ca4-d5ad-cce0" name="Designated Marksman" hidden="false" targetId="b796-f701-2f70-bcb8" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
               </costs>
@@ -414,7 +431,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="19.0"/>
+        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="22.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0912-4d97-fc2f-0099" name="Alligator E-War Core" hidden="false" collective="false" import="true" type="unit">
@@ -453,18 +470,31 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="b5b1-cf43-f03f-cf25" name="Designated Marksman" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="0b77-673c-8e90-dcb0" name="Designated Marksman" hidden="false" targetId="b796-f701-2f70-bcb8" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bd6e-888e-a0f3-0e13" name="&quot;Wizard&quot;" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="da2e-1b5c-ebca-a37a" name="Designated Marksman" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
+                <profile id="853b-1328-aaf3-222e" name="&quot;Wizard&quot;" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
                   <characteristics>
-                    <characteristic name="INT" typeId="819a-ac56-3e01-da45">4</characteristic>
-                    <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">4</characteristic>
-                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">3</characteristic>
-                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Spotter: Mechs hit by an attack from this model gain 1 Sat-Lock E-War token.  Sat-Lock is an E-War effect, friendly mechs shooting at a Sat-Locked target gain +1 Ballistics.  Sat-Locked models may never benefit from wargear that improves AGL.  Sat-Locked models are also Painted.</characteristic>
+                    <characteristic name="INT" typeId="819a-ac56-3e01-da45">3</characteristic>
+                    <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">3</characteristic>
+                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">2</characteristic>
+                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Fireball: This is an E-War weapon.  Target enemy model within 12” or within 12” of a friendly Uplink.  Make 6 E-War rolls, for each result of a 13+ the enemy model receives 1 Burnout E-War token.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <rules>
+                <rule id="9832-9019-6487-2bac" name="E-War: Burnout" hidden="false">
+                  <description>E-War effect: Cook - This model is considered to be in Critical Heat.  When this model generates Heat, it suffers 2 damage for each Heat generated.  Crippling E-War effect: Roasted - When this model activates, it suffers 8 damage.</description>
+                </rule>
+              </rules>
               <costs>
-                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -513,7 +543,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="19.0"/>
+        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="25.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6e46-c251-d424-4393" name="Ox Assault Core" hidden="false" collective="false" import="true" type="unit">
@@ -552,18 +582,42 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="6a6a-db33-c80b-8a85" name="Designated Marksman" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="b1b4-dfc3-3ab5-491d" name="Designated Marksman" hidden="false" targetId="b796-f701-2f70-bcb8" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0664-89ec-315c-cf74" name="&quot;Bulldozer&quot;" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="7665-5688-9426-7e52" name="Designated Marksman" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
+                <profile id="b166-1c0f-2d93-5d0a" name="&quot;Bulldozer&quot;" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
                   <characteristics>
                     <characteristic name="INT" typeId="819a-ac56-3e01-da45">4</characteristic>
-                    <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">4</characteristic>
-                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">3</characteristic>
-                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Spotter: Mechs hit by an attack from this model gain 1 Sat-Lock E-War token.  Sat-Lock is an E-War effect, friendly mechs shooting at a Sat-Locked target gain +1 Ballistics.  Sat-Locked models may never benefit from wargear that improves AGL.  Sat-Locked models are also Painted.</characteristic>
+                    <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">3</characteristic>
+                    <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">5</characteristic>
+                    <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Crushing Charge: When this Mech ends movement B2B with an enemy model, it may immediately perform this attack.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="4785-4fc7-5f0c-fc4d" name="Crushing Charge" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E2H</characteristic>
+                    <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
+                    <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                    <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                    <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">N/A</characteristic>
+                    <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">N/A</characteristic>
+                    <characteristic name="Special" typeId="7150-9125-f07c-d927">Models hit by this attack are Knocked Down.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <rules>
+                <rule id="407f-b8c3-6eb3-65d8" name="Knocked Down" hidden="false">
+                  <description>Knocked Down mechs reduce their Agility to 5 and must forfeit any movement from the first Move action they take to cancel the Knocked Down state.</description>
+                </rule>
+              </rules>
               <costs>
-                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="6.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -612,7 +666,317 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="19.0"/>
+        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="27.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="31d6-f21f-bca7-ba2c" name="Raven Drone" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="cc12-6add-085c-3a3f" name="Raven Drone" hidden="false" typeId="b440-ec09-28e2-93c2" typeName="Drone">
+          <characteristics>
+            <characteristic name="E" typeId="6677-10b7-244f-e804">4</characteristic>
+            <characteristic name="H" typeId="2ba8-3e4f-87b0-fc08">2/4/6</characteristic>
+            <characteristic name="HP" typeId="d70d-165c-bfc8-cff2">12</characteristic>
+            <characteristic name="ARM" typeId="0d3f-6af8-5fec-bd37">0</characteristic>
+            <characteristic name="FW" typeId="6dc0-aa77-f700-e825">2</characteristic>
+            <characteristic name="MOV" typeId="cdcf-88d9-7773-fa01">16</characteristic>
+            <characteristic name="AGL" typeId="d270-a719-79bd-7778">18</characteristic>
+            <characteristic name="INT" typeId="5964-46c9-d476-5f2c">1</characteristic>
+            <characteristic name="BAL" typeId="d8de-7831-920e-7579">1</characteristic>
+            <characteristic name="CC" typeId="15f2-4378-0983-53d4">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d247-fde5-2e69-8593" name="Drone Hardpoint" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5955-3099-de6f-2a89" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84f0-7623-3ddf-f0a8" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a35b-c71e-f2b4-6cef" name="E-War Package" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="2e9d-5a13-7699-b461" name="E-War Package" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Digital Gremlins (3E2H): Make 4 E-War attack rolls (2d12).  For each roll of a 14+, assign one Malfunction E-War token to an enemy model within 12&quot;.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="95ff-f324-71e4-94c9" name="E-War: Malfunction" hidden="false">
+                  <description>E-War Effect: Clock Jitter - When this model makes an attack roll, roll one additional d12 and discard the highest dice.  Crippling E-War Effect: Infinite &quot;For&quot; Loop - Actions performed by this model cost 1 additional Energy.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="6.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="adfa-9cde-3c53-55ec" name="Scout Package" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="3b4a-45d2-fd8c-b2a2" name="Scout Package" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Paint Target (2E1H): Make 3 E-War attack rolls (2d12) and for each roll of a 12+, assign 1 Painted E-War token to an enemy model within 12&quot; and TLOS.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="b5d0-52bf-1921-837d" name="E-War: Painted" hidden="false" targetId="086f-e0bb-bba5-d7d1" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ed2c-02db-a41d-3fd3" name="Interference Package" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="5a9c-b1f5-5f65-f917" name="Interference Package" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Jam Communications (2E1H): Make 3 E-War attack rolls (2d12).  For each roll of 14+, assign one Jam E-War token to any enemy model within 12” of this model, or any enemy model within 12” of a friendly Uplink.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="820e-d215-085d-8da0" name="E-War: Jam" hidden="false" targetId="8950-2cb9-4920-f0d7" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a84f-2021-352c-78a6" name="Tarantula Drone" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="eff7-29b0-ded9-3b29" name="Tarantula Drone" hidden="false" typeId="b440-ec09-28e2-93c2" typeName="Drone">
+          <characteristics>
+            <characteristic name="E" typeId="6677-10b7-244f-e804">5</characteristic>
+            <characteristic name="H" typeId="2ba8-3e4f-87b0-fc08">2/4/6</characteristic>
+            <characteristic name="HP" typeId="d70d-165c-bfc8-cff2">15</characteristic>
+            <characteristic name="ARM" typeId="0d3f-6af8-5fec-bd37">1</characteristic>
+            <characteristic name="FW" typeId="6dc0-aa77-f700-e825">1</characteristic>
+            <characteristic name="MOV" typeId="cdcf-88d9-7773-fa01">8</characteristic>
+            <characteristic name="AGL" typeId="d270-a719-79bd-7778">15</characteristic>
+            <characteristic name="INT" typeId="5964-46c9-d476-5f2c">1</characteristic>
+            <characteristic name="BAL" typeId="d8de-7831-920e-7579">2</characteristic>
+            <characteristic name="CC" typeId="15f2-4378-0983-53d4">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b4a6-accf-48f5-5bf1" name="Tarantula Drone Carrier" hidden="false">
+          <description>This Drone can carry Tactical Subsystems and perform their actions.</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="31dd-62ce-c3ab-f557" name="Drone Hardpoint" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f108-ce9b-0189-9ec0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68b3-fd2b-b05d-cef3" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2401-9bee-fe04-c9f1" name="Pulse Laser" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="3686-281f-4dd6-3117" name="Pulse Laser" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E2H</characteristic>
+                    <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">0-12&quot;</characteristic>
+                    <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">2</characteristic>
+                    <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                    <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+2</characteristic>
+                    <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">1</characteristic>
+                    <characteristic name="Special" typeId="7150-9125-f07c-d927"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="82cc-575b-ff85-b567" name="Barricade Rack" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="6da9-b4d9-ae1a-4049" name="Barricade Rack" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Deploy Barricade (1E1H): Place 1 Barricade in B2B with this model.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="aef3-6713-c26c-49aa" name="Barricade" hidden="false" typeId="7b43-5b30-10ac-5318" typeName="Smart Munition">
+                  <characteristics>
+                    <characteristic name="MOV" typeId="2395-cc5b-d0e8-beab">0</characteristic>
+                    <characteristic name="AGL" typeId="5997-853e-2001-7dc1">12</characteristic>
+                    <characteristic name="HP" typeId="b1fe-d130-ea89-69a7">20</characteristic>
+                    <characteristic name="ARM" typeId="39ac-47b6-9832-a80e">4</characteristic>
+                    <characteristic name="FW" typeId="ffea-1393-8d8f-62f3">0</characteristic>
+                    <characteristic name="Damage" typeId="bbeb-6f06-4059-5e45">N/A</characteristic>
+                    <characteristic name="AP" typeId="cefe-f546-d4e9-7e74">N/A</characteristic>
+                    <characteristic name="Behavior" typeId="1078-7900-747a-5c6d">This Smart Munition is considered Cover.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5ec0-851c-1f83-5dda" name="MLRS Ammo Rack" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="b78d-3005-c889-e2dd" name="MLRS Ammo Pack" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Autoloaders (1E1H): Reload one equipped MLRS weapon.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="782a-1174-a952-3628" name="Rattlesnake Mine Rack" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="4ed2-89b4-04e6-b359" name="Rattlesnake Mine Rack" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Action(1E1H): Deploy 1 Rattlesnake Mine in Armed Mode.  Place a Rattlesnake Mine (Armed) miniature within 4&quot; of this mech.  Action (2E1H): Launch 1 Rattlesnake Mine in Flight Mode.  Place one Rattlesnake Mine (Flight) miniature in base-to-base contact with this Mech.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="4c92-4b25-1ea3-7e5d" name="Rattlesnake Mine" hidden="false" typeId="7b43-5b30-10ac-5318" typeName="Smart Munition">
+                  <characteristics>
+                    <characteristic name="MOV" typeId="2395-cc5b-d0e8-beab">8</characteristic>
+                    <characteristic name="AGL" typeId="5997-853e-2001-7dc1">18</characteristic>
+                    <characteristic name="HP" typeId="b1fe-d130-ea89-69a7">6</characteristic>
+                    <characteristic name="ARM" typeId="39ac-47b6-9832-a80e">0</characteristic>
+                    <characteristic name="FW" typeId="ffea-1393-8d8f-62f3">2</characteristic>
+                    <characteristic name="Damage" typeId="bbeb-6f06-4059-5e45">2d12+4</characteristic>
+                    <characteristic name="AP" typeId="cefe-f546-d4e9-7e74">3</characteristic>
+                    <characteristic name="Behavior" typeId="1078-7900-747a-5c6d">Rattlesnake Mines in Flight Mode may move freely, Rattlesnake Mines in Armed Mode may no longer move and may not return to Flight Mode.  If they enter base contact with an enemy model, they immediately explode without an attack roll, dealing damage to all models within 2&quot;.  After moving, a Rattlesnake Mine may also Arm itself.  Replace the Rattlesnake Mine (Flight) model with a Rattlesnake Mine (Armed) model.  If an enemy model moves within 2&quot; of an Armed Rattlesnake Mine, the mine immediately detonates without an attack roll, dealing damage to all models within 2&quot;.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1b40-2dcb-f372-0689" name="Signal Jammer Pod" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="4fa6-8dd7-14bd-30a7" name="Signal Jammer Pod" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Jam Communications (2E1H): Make 3 E-War attack rolls (2d12).  For each roll of 14+, assign one Jam E-War token to any enemy model within 12” of this Mech, or any enemy model within 12” of a friendly Uplink.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5319-6cb4-55a5-cf2f" name="Uplink Rack" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="4611-829c-a948-6103" name="Uplink Rack" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+                  <characteristics>
+                    <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Action (1E1H): Place one Uplink in B2B with this model.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="0e9e-406e-7e91-0373" name="Uplink" hidden="false" typeId="7b43-5b30-10ac-5318" typeName="Smart Munition">
+                  <characteristics>
+                    <characteristic name="MOV" typeId="2395-cc5b-d0e8-beab">0</characteristic>
+                    <characteristic name="AGL" typeId="5997-853e-2001-7dc1">12</characteristic>
+                    <characteristic name="HP" typeId="b1fe-d130-ea89-69a7">10</characteristic>
+                    <characteristic name="ARM" typeId="39ac-47b6-9832-a80e">1</characteristic>
+                    <characteristic name="FW" typeId="ffea-1393-8d8f-62f3">3</characteristic>
+                    <characteristic name="Damage" typeId="bbeb-6f06-4059-5e45">N/A</characteristic>
+                    <characteristic name="AP" typeId="cefe-f546-d4e9-7e74">N/A</characteristic>
+                    <characteristic name="Behavior" typeId="1078-7900-747a-5c6d">Friendly Mechs can perform E-War attacks through a friendly Uplink.  Measure range from the Uplink as though it was the Mech performing the E-War attack.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="2.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="0fd1-7efd-46ee-5583" name="Porcupine Drone" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="9a6d-d813-48a5-7f1b" name="Porcupine Drone" hidden="false" typeId="b440-ec09-28e2-93c2" typeName="Drone">
+          <characteristics>
+            <characteristic name="E" typeId="6677-10b7-244f-e804">5</characteristic>
+            <characteristic name="H" typeId="2ba8-3e4f-87b0-fc08">2/4/6</characteristic>
+            <characteristic name="HP" typeId="d70d-165c-bfc8-cff2">14</characteristic>
+            <characteristic name="ARM" typeId="0d3f-6af8-5fec-bd37">1</characteristic>
+            <characteristic name="FW" typeId="6dc0-aa77-f700-e825">1</characteristic>
+            <characteristic name="MOV" typeId="cdcf-88d9-7773-fa01">12</characteristic>
+            <characteristic name="AGL" typeId="d270-a719-79bd-7778">14</characteristic>
+            <characteristic name="INT" typeId="5964-46c9-d476-5f2c">1</characteristic>
+            <characteristic name="BAL" typeId="d8de-7831-920e-7579">2</characteristic>
+            <characteristic name="CC" typeId="15f2-4378-0983-53d4">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b748-4577-2800-7c64" name="Drone Hardpoint" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51a5-380d-ef96-faa4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbab-4a4d-999c-7a48" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="28be-a55f-7098-7d9c" name="Pulse Laser" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="82be-9687-35a9-2f51" name="Pulse Laser" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E2H</characteristic>
+                    <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">0-12&quot;</characteristic>
+                    <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">2</characteristic>
+                    <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                    <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+2</characteristic>
+                    <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">1</characteristic>
+                    <characteristic name="Special" typeId="7150-9125-f07c-d927"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5d37-e283-ee19-4446" name="Microwave Projector" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="c118-f781-b5a3-187f" name="Microwave Projector" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E2H</characteristic>
+                    <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">0-8&quot;</characteristic>
+                    <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">2</characteristic>
+                    <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                    <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">N/A</characteristic>
+                    <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">N/A</characteristic>
+                    <characteristic name="Special" typeId="7150-9125-f07c-d927">Electromagnetic Interference: For each successful hit with this weapon, the target model loses 1 Energy and generates 1 Heat.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="70d7-fbc9-8551-d9a9" name="Interception Package" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="423b-471f-95ec-966a" name="Interception Package" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">N/A</characteristic>
+                    <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">0-12&quot;</characteristic>
+                    <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">3</characteristic>
+                    <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                    <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">5</characteristic>
+                    <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">2</characteristic>
+                    <characteristic name="Special" typeId="7150-9125-f07c-d927">Reaction Fire: This weapon can only fire as a Reaction.  Defense Protocols (2E2H): This Reaction may be declared when an enemy Smart Munition ends its movement within 12&quot; of this model.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -677,17 +1041,19 @@
         <selectionEntry id="3ff5-71e0-c7e8-3f78" name="Laser Pistol + Vibroblade" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="6809-5fdb-82b6-870c" name="Laser Pistol" hidden="false" targetId="e845-7021-b418-c997" type="profile"/>
+            <infoLink id="b0cf-270b-0144-f173" name="Vibroblade" hidden="false" targetId="ea64-9f11-d216-98bb" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="2.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2f3d-fa48-e245-0b77" name="Laser SMG + Jump Jet" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="7326-ba91-bb1c-43a5" name="Laser SMG" hidden="false" targetId="38c0-c3ff-85bf-0264" type="profile"/>
+            <infoLink id="9702-0f33-21e0-ba18" name="Jump Jet" hidden="false" targetId="a0d7-2e0f-ec6f-d267" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1a18-4a4c-d2d2-c8d9" name="Rainstorm Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -695,7 +1061,7 @@
             <infoLink id="4479-a04d-32d7-036a" name="Rainstorm Pistol" hidden="false" targetId="cab6-ebb1-999f-8636" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="da8d-0872-59cc-0d75" name="MLRS Pod" hidden="false" collective="false" import="true" type="upgrade">
@@ -719,21 +1085,38 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0bba-11c5-1258-573a" name="Gauss Rifle + Combat Blade" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="05ef-9f2a-e781-de0f" name="Combat Blade" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E2H</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+4</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">3</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="8e34-739b-bc2a-301d" name="Gauss Rifle" hidden="false" targetId="6de6-eb54-7cd5-32ae" type="profile"/>
+          </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b0fb-9c15-7674-58ae" name="Vibroblade + Grenade Pod" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="b075-d1c4-6612-5988" name="Grenade Pod" hidden="false" targetId="251a-8b93-4aa0-8c99" type="profile"/>
             <infoLink id="56e1-e58b-6125-732b" name="Grenade Mine" hidden="false" targetId="581c-8199-adfb-3f0f" type="profile"/>
+            <infoLink id="36f3-7c47-ab1b-ab71" name="Vibroblade" hidden="false" targetId="ea64-9f11-d216-98bb" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="085d-45ea-a02c-cb8b" name="Ion Cannon Support Arm" hidden="false" collective="false" import="true" type="upgrade">
@@ -757,33 +1140,41 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c73b-277a-5ea8-0110" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="8d19-e9d5-2122-90e5" name="Shield" hidden="false" targetId="c039-c14d-f701-0a41" type="profile"/>
+          </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="1.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="cc1d-756a-ab38-4c10" name="Gauss Rifle + Meteor Shield" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="5422-bd79-2139-59d6" name="Meteor Shield" hidden="false" targetId="ee70-5cd0-982a-9ba0" type="profile"/>
+            <infoLink id="7b33-5a4a-a46f-2e2d" name="Gauss Rifle" hidden="false" targetId="6de6-eb54-7cd5-32ae" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b514-571f-819a-9904" name="Vibroblade" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="1f8a-5e34-e53e-caef" name="Vibroblade" hidden="false" targetId="ea64-9f11-d216-98bb" type="profile"/>
+          </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="1.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="acca-685b-b480-75fe" name="Piston Spear + Meteor Shield" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="1e23-23d3-6682-d201" name="Meteor Shield" hidden="false" targetId="ee70-5cd0-982a-9ba0" type="profile"/>
+            <infoLink id="336e-6da4-ba9b-0686" name="Piston Spear" hidden="false" targetId="924f-e43f-35f7-32eb" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="2.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c87a-6f75-ff87-bfcc" name="Shotgun + Grenade Pod" hidden="false" collective="false" import="true" type="upgrade">
@@ -793,7 +1184,7 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
             <infoLink id="4ab8-10cf-a2c9-3901" name="Shotgun" hidden="false" targetId="8d97-bb83-a4a0-ce1b" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="4.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -801,8 +1192,21 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
     <selectionEntryGroup id="a864-4bd5-c93c-6738" name="Right Arm" hidden="false" collective="false" import="true">
       <selectionEntries>
         <selectionEntry id="458e-cf2c-8720-46bb" name="Laser Sniper Rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="4a3c-0e2c-7de6-15c1" name="Laser Sniper Rifle" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E4H</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">24-60&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">1d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+8</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">4</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Sighting In: If this Mech is Aiming, this weapon gains 2d12 Accuracy.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="6.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ac6e-99f3-4931-8f35" name="Laser Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -820,15 +1224,16 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="daf9-93a3-9545-5050" name="Laser SMG + Jump Jet" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="a5a0-9a2e-3e78-31df" name="Laser SMG" hidden="false" targetId="38c0-c3ff-85bf-0264" type="profile"/>
+            <infoLink id="cfdd-a0a5-b997-a2c4" name="Jump Jet" hidden="false" targetId="a0d7-2e0f-ec6f-d267" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e712-99c5-f33b-f81e" name="Laser Cannon + Shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -849,7 +1254,7 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
             <infoLink id="9dff-92b5-bfd0-55e1" name="Shield" hidden="false" targetId="c039-c14d-f701-0a41" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="cc85-4749-53a9-5bef" name="Rainstorm Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -857,12 +1262,25 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
             <infoLink id="5fdd-3941-f29f-37f5" name="Rainstorm Pistol" hidden="false" targetId="cab6-ebb1-999f-8636" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="343d-8a73-c50e-a5eb" name="Laser Marksman Rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="ce37-d77d-adad-e3dc" name="Laser Marksman Rifle" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E3H</characteristic>
+                <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">12-30&quot;</characteristic>
+                <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">3</characteristic>
+                <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+                <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+6</characteristic>
+                <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">3</characteristic>
+                <characteristic name="Special" typeId="7150-9125-f07c-d927">Precise: When resolving an attack with this weapon while this Mech is Aiming, enemy models reduce their Cover AGL bonus by 2 to a minimum of 0.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d514-055e-b573-0226" name="Ion Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -880,7 +1298,7 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="10.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="acf5-1041-4848-b4af" name="Laser SMG" hidden="false" collective="false" import="true" type="upgrade">
@@ -888,7 +1306,7 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
             <infoLink id="5879-71cd-1b1d-bebe" name="Laser SMG" hidden="false" targetId="38c0-c3ff-85bf-0264" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="2.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="dd13-741c-209f-1066" name="Ion Shotgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -906,7 +1324,7 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="10.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c16c-8186-658d-f039" name="Monomolecular Claymore" hidden="false" collective="false" import="true" type="upgrade">
@@ -924,37 +1342,43 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="6.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8e26-32dd-08ec-1419" name="Shotgun + Piston Spear" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="8ec8-9493-be97-524d" name="Shotgun" hidden="false" targetId="8d97-bb83-a4a0-ce1b" type="profile"/>
+            <infoLink id="56b0-529f-980e-0516" name="Piston Spear" hidden="false" targetId="924f-e43f-35f7-32eb" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0805-e2d3-6d93-3da9" name="Laser Pistol + Vibroblade" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="e497-f079-d381-0d2a" name="Laser Pistol" hidden="false" targetId="e845-7021-b418-c997" type="profile"/>
+            <infoLink id="1fdd-dd05-f791-3c67" name="Vibroblade" hidden="false" targetId="ea64-9f11-d216-98bb" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="2.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d92e-3ee6-8831-6bac" name="Vibroblade + Grenade Pod" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="f94f-9998-0287-599a" name="Grenade Pod" hidden="false" targetId="251a-8b93-4aa0-8c99" type="profile"/>
             <infoLink id="651e-1209-b154-403d" name="Grenade Mine" hidden="false" targetId="581c-8199-adfb-3f0f" type="profile"/>
+            <infoLink id="63b9-e222-f71a-d10f" name="Vibroblade" hidden="false" targetId="ea64-9f11-d216-98bb" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="2be4-7b1d-2e56-1aa0" name="Vibroblade" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="b4d8-1ff5-1bcb-2a44" name="Vibroblade" hidden="false" targetId="ea64-9f11-d216-98bb" type="profile"/>
+          </infoLinks>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="1.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -970,7 +1394,7 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="bb24-c11f-8b83-0663" name="Rattlesnake Mine Rack" hidden="false" collective="false" import="true" type="upgrade">
@@ -994,12 +1418,19 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4c4c-fc5c-8d97-1c5a" name="Coolant Pack" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="312f-f12c-1cd9-cc2f" name="Coolant Pack" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Once Per Activation Action (1E): Reduce this Mech&apos;s Heat by 2.  Action (1E) Reduce this Mech&apos;s Heat by 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8f4e-3914-3184-5a61" name="Ion Cannon Support System" hidden="false" collective="false" import="true" type="upgrade">
@@ -1016,7 +1447,7 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="1.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8ba4-dea4-0ee5-7575" name="Overload Rack" hidden="false" collective="false" import="true" type="upgrade">
@@ -1028,7 +1459,7 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="6.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="81f0-23ed-06be-df05" name="Signal Jammer Pod" hidden="false" collective="false" import="true" type="upgrade">
@@ -1040,22 +1471,67 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="1.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="da68-9ead-87ce-2634" name="Barricade Rack" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="1ae6-3fd8-8713-fb38" name="Barricade Rack" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Deploy Barricade (1E1H): Place 1 Barricade in B2B with this model.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="2770-98dc-ab35-b53a" name="Barricade" hidden="false" typeId="7b43-5b30-10ac-5318" typeName="Smart Munition">
+              <characteristics>
+                <characteristic name="MOV" typeId="2395-cc5b-d0e8-beab">0</characteristic>
+                <characteristic name="AGL" typeId="5997-853e-2001-7dc1">12</characteristic>
+                <characteristic name="HP" typeId="b1fe-d130-ea89-69a7">20</characteristic>
+                <characteristic name="ARM" typeId="39ac-47b6-9832-a80e">4</characteristic>
+                <characteristic name="FW" typeId="ffea-1393-8d8f-62f3">0</characteristic>
+                <characteristic name="Damage" typeId="bbeb-6f06-4059-5e45">N/A</characteristic>
+                <characteristic name="AP" typeId="cefe-f546-d4e9-7e74">N/A</characteristic>
+                <characteristic name="Behavior" typeId="1078-7900-747a-5c6d">This Smart Munition is considered Cover.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="513e-408f-48f0-e46b" name="Jetpack" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="513e-408f-48f0-e46b" name="Jump Pack" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="77a7-29eb-b610-890a" name="Jump Pack" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Afterburner (3E3H): Increase this Mech’s MOV attribute by 8” until the end of its activation.  When the Jump Pack is active, this Mech ignores intervening models and terrain while moving and can move to any height without the need to climb.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="57c8-e90e-1c7b-d85f" name="Uplink Rack" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="3069-1192-c28e-1558" name="Uplink Rack" hidden="false" typeId="bd82-be4a-dc12-7a5b" typeName="Equipment">
+              <characteristics>
+                <characteristic name="Special" typeId="890c-c31c-e93d-cfb8">Action (1E1H): Place one Uplink in B2B with this model.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="6fb7-657d-8dcc-2186" name="Uplink" hidden="false" typeId="7b43-5b30-10ac-5318" typeName="Smart Munition">
+              <characteristics>
+                <characteristic name="MOV" typeId="2395-cc5b-d0e8-beab">0</characteristic>
+                <characteristic name="AGL" typeId="5997-853e-2001-7dc1">12</characteristic>
+                <characteristic name="HP" typeId="b1fe-d130-ea89-69a7">10</characteristic>
+                <characteristic name="ARM" typeId="39ac-47b6-9832-a80e">1</characteristic>
+                <characteristic name="FW" typeId="ffea-1393-8d8f-62f3">3</characteristic>
+                <characteristic name="Damage" typeId="bbeb-6f06-4059-5e45">N/A</characteristic>
+                <characteristic name="AP" typeId="cefe-f546-d4e9-7e74">N/A</characteristic>
+                <characteristic name="Behavior" typeId="1078-7900-747a-5c6d">Friendly Mechs can perform E-War attacks through a friendly Uplink.  Measure range from the Uplink as though it was the Mech performing the E-War attack.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
-            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="0.0"/>
+            <cost name="Points" typeId="8e0a-942d-4e72-f585" value="2.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1082,12 +1558,12 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
     </profile>
     <profile id="6de6-eb54-7cd5-32ae" name="Gauss Rifle" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
       <characteristics>
-        <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be"/>
-        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71"/>
-        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d"/>
-        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4"/>
-        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb"/>
-        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4"/>
+        <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">4E3H</characteristic>
+        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">12-24&quot;</characteristic>
+        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+6</characteristic>
+        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">5</characteristic>
         <characteristic name="Special" typeId="7150-9125-f07c-d927"/>
       </characteristics>
     </profile>
@@ -1109,13 +1585,13 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
     </profile>
     <profile id="ea64-9f11-d216-98bb" name="Vibroblade" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
       <characteristics>
-        <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be"/>
-        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71"/>
-        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d"/>
-        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4"/>
-        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb"/>
-        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4"/>
-        <characteristic name="Special" typeId="7150-9125-f07c-d927"/>
+        <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">2E1H</characteristic>
+        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
+        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">1d12+4</characteristic>
+        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">1</characteristic>
+        <characteristic name="Special" typeId="7150-9125-f07c-d927">Dual Wield: If this model is equipped with two Vibroblades, increase the Attack of this weapon to 2.</characteristic>
       </characteristics>
     </profile>
     <profile id="38c0-c3ff-85bf-0264" name="Laser SMG" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
@@ -1131,13 +1607,13 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
     </profile>
     <profile id="924f-e43f-35f7-32eb" name="Piston Spear" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
       <characteristics>
-        <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be"/>
-        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71"/>
-        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d"/>
-        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4"/>
-        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb"/>
-        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4"/>
-        <characteristic name="Special" typeId="7150-9125-f07c-d927"/>
+        <characteristic name="Action Cost" typeId="4987-4e4d-7d46-b8be">3E3H</characteristic>
+        <characteristic name="Range" typeId="45a1-37ed-9b73-ef71">B2B</characteristic>
+        <characteristic name="Attacks" typeId="e930-1438-9e48-ee3d">1</characteristic>
+        <characteristic name="Accuracy" typeId="e892-ae9d-6cfd-a4b4">2d12</characteristic>
+        <characteristic name="Damage" typeId="be45-c5a9-d0bb-f5cb">2d12+2</characteristic>
+        <characteristic name="AP" typeId="6761-dd5f-8ae9-bde4">4</characteristic>
+        <characteristic name="Special" typeId="7150-9125-f07c-d927">Sustained Attack: If this attack hits an enemy model, further attacks with this weapon during this activation automatically hit.</characteristic>
       </characteristics>
     </profile>
     <profile id="cab6-ebb1-999f-8636" name="Rainstorm Pistol" hidden="false" typeId="e33b-e647-da7c-84ac" typeName="Weapon">
@@ -1188,6 +1664,14 @@ Virus Injection: If a model is hit by an attack with this weapon, after the atta
         <characteristic name="Damage" typeId="bbeb-6f06-4059-5e45">2d12</characteristic>
         <characteristic name="AP" typeId="cefe-f546-d4e9-7e74">0</characteristic>
         <characteristic name="Behavior" typeId="1078-7900-747a-5c6d">If an enemy unit moves within 2&quot; of this model, it immediately detonates, dealing its damage to all models within 2&quot;.  Then it is removed from the game.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b796-f701-2f70-bcb8" name="Designated Marksman" hidden="false" typeId="918d-50c3-11bf-b545" typeName="Pilot">
+      <characteristics>
+        <characteristic name="INT" typeId="819a-ac56-3e01-da45">4</characteristic>
+        <characteristic name="BAL" typeId="6094-8b4f-d0c5-b1bd">4</characteristic>
+        <characteristic name="CC" typeId="acc4-3776-0dfe-9a2a">3</characteristic>
+        <characteristic name="Pilot Ability" typeId="630b-c21f-a23c-5347">Spotter: Mechs hit by an attack from this model gain 1 Sat-Lock E-War token.  Sat-Lock is an E-War effect, friendly mechs shooting at a Sat-Locked target gain +1 Ballistics.  Sat-Locked models may never benefit from wargear that improves AGL.  Sat-Locked models are also Painted.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

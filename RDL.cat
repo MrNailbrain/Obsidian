@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a121-69b5-de2c-f2db" name="RDL" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="2137-ec53-3f2e-4674" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3b94-0a0d-913e-b8f9" name="RDL" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="2137-ec53-3f2e-4674" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="da46-9acf-9a49-7df6" name="Battle Core" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1568,7 +1568,7 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="f43a-8825-4abb-e4c9" name="Painted" hidden="false" targetId="086f-e0bb-bba5-d7d1" type="rule"/>
+            <infoLink id="f43a-8825-4abb-e4c9" name="E-War: Painted" hidden="false" targetId="086f-e0bb-bba5-d7d1" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Points" typeId="8e0a-942d-4e72-f585" value="3.0"/>
